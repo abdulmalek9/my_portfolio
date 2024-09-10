@@ -15,7 +15,7 @@ class MobileHeader extends StatelessWidget {
       children: [
         const FlutterLogo(),
         const SizedBox(
-          width: 24,
+          width: 48,
         ),
         for (int i = 0; i < headerItem.length; i++)
           Text(
@@ -23,7 +23,7 @@ class MobileHeader extends StatelessWidget {
             style: AppStyles.styleRegular14(context),
           ),
         const SizedBox(
-          width: 20,
+          width: 16,
         ),
         const ResumeContainer()
       ],
