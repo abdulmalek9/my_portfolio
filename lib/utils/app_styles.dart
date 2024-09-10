@@ -4,92 +4,65 @@ import 'package:my_portfolio/utils/size_config.dart';
 // import 'package:responsive_dash_board/utils/size_config.dart';
 
 abstract class AppStyles {
-  static TextStyle styleRegular16(context) {
+  static TextStyle styleRegular18(context) {
     return TextStyle(
-      color: const Color(0xFF064060),
-      fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'Montserrat',
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 18),
+      fontFamily: 'Readex Pro',
       fontWeight: FontWeight.w400,
     );
   }
 
-  static TextStyle styleBold16(BuildContext context) {
+  static TextStyle styleRegular14(context) {
     return TextStyle(
-      color: const Color(0xFF4EB7F2),
-      fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'Montserrat',
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 14),
+      fontFamily: 'Readex Pro',
+      fontWeight: FontWeight.w400,
+    );
+  }
+
+  static TextStyle styleBold24(BuildContext context) {
+    return TextStyle(
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 24),
+      fontFamily: 'Readex Pro',
       fontWeight: FontWeight.w700,
     );
   }
 
-  static TextStyle styleMedium16(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFF064061),
-      fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w500,
-    );
-  }
-
-  static TextStyle styleMedium20(BuildContext context) {
+  static TextStyle styleBold40(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
-      fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: 'Montserrat',
+      fontSize: getResponsiveFontSize(context, fontSize: 40),
+      fontFamily: 'Readex Pro',
+      fontWeight: FontWeight.w700,
+    );
+  }
+
+  static TextStyle styleMedium14(BuildContext context, double? fonteSize) {
+    return TextStyle(
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: fonteSize ?? 14),
+      fontFamily: 'Readex Pro',
       fontWeight: FontWeight.w500,
     );
   }
 
-  static TextStyle styleSemiBold16(BuildContext context) {
+  static TextStyle styleSemiBold40(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
-      fontSize: getResponsiveFontSize(context, fontSize: 16),
-      fontFamily: 'Montserrat',
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 40),
+      fontFamily: 'Readex Pro',
       fontWeight: FontWeight.w600,
     );
   }
 
   static TextStyle styleSemiBold20(BuildContext context) {
     return TextStyle(
-      color: const Color(0xFF064061),
-      fontSize: getResponsiveFontSize(context, fontSize: 20),
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600,
-    );
-  }
-
-  static TextStyle styleRegular12(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFFAAAAAA),
-      fontSize: getResponsiveFontSize(context, fontSize: 12),
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w400,
-    );
-  }
-
-  static TextStyle styleSemiBold24(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFF4EB7F2),
-      fontSize: getResponsiveFontSize(context, fontSize: 24),
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w600,
-    );
-  }
-
-  static TextStyle styleRegular14(BuildContext context) {
-    return TextStyle(
-      color: const Color(0xFFAAAAAA),
-      fontSize: getResponsiveFontSize(context, fontSize: 14),
-      fontFamily: 'Montserrat',
-      fontWeight: FontWeight.w400,
-    );
-  }
-
-  static TextStyle styleSemiBold18(BuildContext context) {
-    return TextStyle(
       color: const Color(0xFFFFFFFF),
-      fontSize: getResponsiveFontSize(context, fontSize: 18),
-      fontFamily: 'Montserrat',
+      fontSize: getResponsiveFontSize(context, fontSize: 20),
+      fontFamily: 'Readex Pro',
       fontWeight: FontWeight.w600,
     );
   }
