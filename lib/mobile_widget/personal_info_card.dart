@@ -18,7 +18,7 @@ class PersonalInfoCard extends StatelessWidget {
             alignment: Alignment.topLeft,
             child: Text(
               "Abdulmalek Al-khatib",
-              style: AppStyles.styleSemiBold20(context),
+              style: AppStyles.styleSemiBold40(context),
             ),
           ),
         ),
@@ -31,7 +31,7 @@ class PersonalInfoCard extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: Text(
                 "Software Developer",
-                style: AppStyles.styleMedium14(context, null)
+                style: AppStyles.styleMedium14(context, 16)
                     .copyWith(color: const Color(0xFF56B8FF)),
               )),
         ),
@@ -39,13 +39,18 @@ class PersonalInfoCard extends StatelessWidget {
           height: 8,
         ),
         Text(
-          "A skilled flutter developer with 1.5 years of experience.\nyou can contact me at any time to\nstart a work full of creativity\nand good performance",
-          style: AppStyles.styleMedium14(context, 10),
+          "A skilled flutter developer with 1.5 years of experience.\nyou can contact me at any time to start a work full\nof creativity and good performance",
+          style: AppStyles.styleMedium14(context, 18),
+          textAlign: TextAlign.justify,
         ),
+        const Spacer(),
+        // const Expanded(
+        //   child: SizedBox(),
+        // ),
+        const IconBuilder(),
         const SizedBox(
-          height: 8,
-        ),
-        const IconBuilder()
+          height: 38,
+        )
       ],
     );
   }
@@ -65,12 +70,65 @@ class IconBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: icons.map((e) {
-        return Padding(
-          padding: const EdgeInsets.only(right: 8.0),
-          child: Flexible(child: Image.asset(width: 25, height: 25, e)),
-        );
-      }).toList(),
+      children: [
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[0]),
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 12.0,
+        ),
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[1]),
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 12.0,
+        ),
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 50, maxHeight: 50),
+            child: Image.asset(icons[2]),
+          ),
+        ),
+        const SizedBox(
+          width: 12.0,
+        ),
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[3]),
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 12.0,
+        ),
+        Flexible(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[4]),
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 12.0,
+        ),
+      ],
     );
   }
 }

@@ -93,6 +93,6 @@ double getScaleFactor(context) {
   } else if (width < SizeConfig.desktopPoint) {
     return width / 1000;
   } else {
-    return width / 1920;
+    return width / 1500;
   }
 }

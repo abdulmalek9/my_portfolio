@@ -22,9 +22,17 @@ class Assets {
   /// assets/images/githup_icon.png
   static const String imagesGithupIcon = "assets/images/githup_icon.png";
 
+  /// Assets for imagesIntro
+  /// assets/images/intro.png
+  static const String imagesIntro = "assets/images/intro.png";
+
   /// Assets for imagesLinkedinIcon
   /// assets/images/linkedin_icon.png
   static const String imagesLinkedinIcon = "assets/images/linkedin_icon.png";
+
+  /// Assets for imagesMyLogo04
+  /// assets/images/my_logo-04.png
+  static const String imagesMyLogo04 = "assets/images/my_logo-04.png";
 
   /// Assets for imagesNewsApp
   /// assets/images/news_app.png
