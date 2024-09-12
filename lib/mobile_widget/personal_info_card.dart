@@ -18,7 +18,7 @@ class PersonalInfoCard extends StatelessWidget {
             alignment: Alignment.topLeft,
             child: Text(
               "Abdulmalek Al-khatib",
-              style: AppStyles.styleSemiBold40(context),
+              style: AppStyles.styleSemiBold47(context),
             ),
           ),
         ),
@@ -31,7 +31,7 @@ class PersonalInfoCard extends StatelessWidget {
               alignment: Alignment.topLeft,
               child: Text(
                 "Software Developer",
-                style: AppStyles.styleMedium14(context, 16)
+                style: AppStyles.styleMedium14(context, 20)
                     .copyWith(color: const Color(0xFF56B8FF)),
               )),
         ),
@@ -71,58 +71,48 @@ class IconBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Flexible(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: Image.asset(icons[0]),
-            ),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: Image.asset(icons[0]),
           ),
         ),
         const SizedBox(
           width: 12.0,
         ),
-        Flexible(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: Image.asset(icons[1]),
-            ),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: Image.asset(icons[1]),
           ),
         ),
         const SizedBox(
           width: 12.0,
         ),
-        Flexible(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 50, maxHeight: 50),
-            child: Image.asset(icons[2]),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 50, maxHeight: 50),
+          child: Image.asset(icons[2]),
+        ),
+        const SizedBox(
+          width: 12.0,
+        ),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: Image.asset(icons[3]),
           ),
         ),
         const SizedBox(
           width: 12.0,
         ),
-        Flexible(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: Image.asset(icons[3]),
-            ),
-          ),
-        ),
-        const SizedBox(
-          width: 12.0,
-        ),
-        Flexible(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-            child: AspectRatio(
-              aspectRatio: 1,
-              child: Image.asset(icons[4]),
-            ),
+        ConstrainedBox(
+          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+          child: AspectRatio(
+            aspectRatio: 1,
+            child: Image.asset(icons[4]),
           ),
         ),
         const SizedBox(

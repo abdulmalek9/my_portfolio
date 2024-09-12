@@ -34,6 +34,10 @@ class Assets {
   /// assets/images/my_logo-04.png
   static const String imagesMyLogo04 = "assets/images/my_logo-04.png";
 
+  /// Assets for imagesMyPic
+  /// assets/images/my_pic.png
+  static const String imagesMyPic = "assets/images/my_pic.png";
+
   /// Assets for imagesNewsApp
   /// assets/images/news_app.png
   static const String imagesNewsApp = "assets/images/news_app.png";
@@ -41,6 +45,10 @@ class Assets {
   /// Assets for imagesNotesApp
   /// assets/images/notes_app.png
   static const String imagesNotesApp = "assets/images/notes_app.png";
+
+  /// Assets for imagesShapes
+  /// assets/images/shapes.png
+  static const String imagesShapes = "assets/images/shapes.png";
 
   /// Assets for imagesTelegrameIcon
   /// assets/images/telegrame_icon.png

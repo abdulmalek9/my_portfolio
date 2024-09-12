@@ -58,6 +58,15 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle styleSemiBold47(BuildContext context) {
+    return TextStyle(
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 47),
+      fontFamily: 'Readex Pro',
+      fontWeight: FontWeight.w600,
+    );
+  }
+
   static TextStyle styleSemiBold20(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
