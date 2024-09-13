@@ -17,7 +17,6 @@ class CartDesktopBuilder extends StatelessWidget {
           width: 686,
           height: 400,
           child: CustomContainer(
-            ratio: 686 / 375,
             child: CardDesktopContainBuilder(),
           ),
         ),

@@ -46,6 +46,10 @@ class Assets {
   /// assets/images/notes_app.png
   static const String imagesNotesApp = "assets/images/notes_app.png";
 
+  /// Assets for imagesProgramingScreen
+  /// assets/images/programing_screen.png
+  static const String imagesProgramingScreen = "assets/images/programing_screen.png";
+
   /// Assets for imagesShapes
   /// assets/images/shapes.png
   static const String imagesShapes = "assets/images/shapes.png";

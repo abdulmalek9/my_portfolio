@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/desktop_widgets/about_me_row.dart';
 import 'package:my_portfolio/desktop_widgets/card_desktop_builder.dart';
 import 'package:my_portfolio/desktop_widgets/desktop_header.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:my_portfolio/desktop_widgets/what_can_i_do_section.dart';
 
 class DesktopLayout extends StatelessWidget {
   const DesktopLayout({super.key});
@@ -22,10 +22,19 @@ class DesktopLayout extends StatelessWidget {
         SizedBox(
           height: 160,
         ),
-        AboutMeRow(),
+        DeviderRow(
+          text: "About Me",
+        ),
         SizedBox(
           height: 100,
         ),
+        DeviderRow(
+          text: "What Can I Do?",
+        ),
+        SizedBox(
+          height: 60,
+        ),
+        WhatCanIDoSection()
       ],
     );
   }

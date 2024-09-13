@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/desktop_widgets/custom_devider.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
-class AboutMeRow extends StatelessWidget {
-  const AboutMeRow({super.key});
-
+class DeviderRow extends StatelessWidget {
+  const DeviderRow({super.key, required this.text});
+  final String text;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -17,7 +17,7 @@ class AboutMeRow extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 60),
             child: Text(
-              "About Me",
+              text,
               style: AppStyles.styleSemiBold20(context),
             ),
           ),

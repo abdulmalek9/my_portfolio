@@ -15,7 +15,6 @@ class MobileLayout extends StatelessWidget {
           MobileHeader(),
           SizedBox(height: 20),
           CustomContainer(
-            ratio: 330 / 180,
             child: PersonalInfoCard(),
           ),
         ],
