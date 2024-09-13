@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/custom_container.dart';
+import 'package:gradient_borders/box_borders/gradient_box_border.dart';
 
 class GlowCustomContainer extends StatelessWidget {
   const GlowCustomContainer({
@@ -11,18 +11,32 @@ class GlowCustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      decoration: const ShapeDecoration(
+      padding: const EdgeInsets.only(left: 35, right: 20, top: 40),
+      decoration: ShapeDecoration(
         shadows: [
           BoxShadow(
-            color: Color(0xFF6EABFE),
-            blurRadius: 14.90,
-            offset: Offset(0, 0),
-            spreadRadius: 5,
-          ),
+              color: const Color(0xFF6EABFE).withOpacity(0.5),
+              blurRadius: 14.90, //42.49,
+              offset: const Offset(0, 0),
+              spreadRadius: 1,
+              blurStyle: BlurStyle.outer),
         ],
-        shape: Border(),
+        gradient: LinearGradient(colors: [
+          const Color(0xFFA1D8FF).withOpacity(0.4),
+          const Color(0xFFD1B6FF).withOpacity(0.5)
+        ]),
+        shape: const GradientBoxBorder(
+          width: 2,
+          gradient: LinearGradient(
+              begin: Alignment.bottomCenter,
+              end: Alignment.topRight,
+              colors: [
+                Color(0xFF5FBCFF),
+                Color(0xFFA471FB),
+              ]),
+        ),
       ),
-      child: CustomContainer(child: child),
+      child: child,
     );
   }
 }

@@ -54,6 +54,10 @@ class Assets {
   /// assets/images/shapes.png
   static const String imagesShapes = "assets/images/shapes.png";
 
+  /// Assets for imagesSpace
+  /// assets/images/space.png
+  static const String imagesSpace = "assets/images/space.png";
+
   /// Assets for imagesTelegrameIcon
   /// assets/images/telegrame_icon.png
   static const String imagesTelegrameIcon = "assets/images/telegrame_icon.png";

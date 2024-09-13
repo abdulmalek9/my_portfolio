@@ -32,9 +32,16 @@ class DesktopLayout extends StatelessWidget {
           text: "What Can I Do?",
         ),
         SizedBox(
-          height: 60,
+          height: 90,
         ),
-        WhatCanIDoSection()
+        WhatCanIDoSection(),
+        SizedBox(
+          height: 200,
+        ),
+        DeviderRow(text: "My projects"),
+        SizedBox(
+          height: 90,
+        ),
       ],
     );
   }

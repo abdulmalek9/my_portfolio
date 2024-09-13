@@ -13,11 +13,11 @@ class CustomDevider extends StatelessWidget {
       decoration: ShapeDecoration(
           shadows: const [
             BoxShadow(
-              color: Color(0xFF6EABFE),
-              blurRadius: 12.90,
-              offset: Offset(0, 0),
-              spreadRadius: 0,
-            ),
+                color: Color(0xFF6EABFE),
+                blurRadius: 12.90,
+                offset: Offset(0, 0),
+                spreadRadius: 0,
+                blurStyle: BlurStyle.solid),
           ],
           color: const Color(0xff86CDFF),
           shape:
