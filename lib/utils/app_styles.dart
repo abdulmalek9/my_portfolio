@@ -31,6 +31,15 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle styleBold26(BuildContext context) {
+    return TextStyle(
+      color: const Color(0xFF7E4DFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 26),
+      fontFamily: 'Readex Pro',
+      fontWeight: FontWeight.w700,
+    );
+  }
+
   static TextStyle styleBold40(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),

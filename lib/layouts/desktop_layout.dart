@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/desktop_widgets/about_me_row.dart';
 import 'package:my_portfolio/desktop_widgets/card_desktop_builder.dart';
 import 'package:my_portfolio/desktop_widgets/desktop_header.dart';
+import 'package:my_portfolio/desktop_widgets/my_project_section.dart';
 import 'package:my_portfolio/desktop_widgets/what_can_i_do_section.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -42,6 +43,7 @@ class DesktopLayout extends StatelessWidget {
         SizedBox(
           height: 90,
         ),
+        MyProjectSection()
       ],
     );
   }
