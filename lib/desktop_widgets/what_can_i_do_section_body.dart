@@ -25,7 +25,15 @@ class WhatCanIDoSectionBody extends StatelessWidget {
             style: AppStyles.styleBold24(context),
           ),
           const SizedBox(
-            height: 30,
+            height: 14,
+          ),
+          const Icon(
+            Icons.keyboard_arrow_down_sharp,
+            color: Colors.white,
+            size: 28,
+          ),
+          const SizedBox(
+            height: 10,
           ),
         ],
       ),
