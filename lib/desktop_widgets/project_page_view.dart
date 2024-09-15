@@ -54,19 +54,17 @@ class ProjectPageView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Consumer(
       builder: (context, value, child) => Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           const NumberBuilder(),
           const SizedBox(
             width: 100,
           ),
-          Builder(
-            builder: (context) {
-              return Expanded(
-                child: ProjectDetailes(
-                    projectModel: projectModel[
-                        context.watch<ProjectIndexProvider>().pageindex]),
-              );
-            },
+          Expanded(
+            child: ProjectDetailes(
+                projectModel: projectModel[
+                    context.watch<ProjectIndexProvider>().pageindex]),
           ),
         ],
       ),

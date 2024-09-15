@@ -18,7 +18,7 @@ class NumberBuilder extends StatelessWidget {
         children: List.generate(
           NumberBuilder.numbers.length,
           (index) => Padding(
-            padding: const EdgeInsets.only(bottom: 50.0),
+            padding: const EdgeInsets.only(bottom: 45.0),
             child: GestureDetector(
               onTap: () {
                 context

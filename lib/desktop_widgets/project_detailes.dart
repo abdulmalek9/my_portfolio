@@ -11,7 +11,7 @@ class ProjectDetailes extends StatelessWidget {
     return Row(
       children: [
         Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(
               projectModel.projectName,

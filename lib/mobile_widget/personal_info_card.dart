@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/app_images.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class PersonalInfoCard extends StatelessWidget {
   const PersonalInfoCard({
@@ -71,48 +72,75 @@ class IconBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: Image.asset(icons[0]),
+        GestureDetector(
+          onTap: () {
+            launchUrl(Uri.parse('https://github.com/abdulmalek9'));
+          },
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[0]),
+            ),
           ),
         ),
         const SizedBox(
           width: 12.0,
         ),
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: Image.asset(icons[1]),
+        GestureDetector(
+          onTap: () {
+            launchUrl(Uri.parse('https://github.com/abdulmalek9'));
+          },
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[1]),
+            ),
           ),
         ),
         const SizedBox(
           width: 12.0,
         ),
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 50, maxHeight: 50),
-          child: Image.asset(icons[2]),
-        ),
-        const SizedBox(
-          width: 12.0,
-        ),
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: Image.asset(icons[3]),
+        GestureDetector(
+          onTap: () {
+            launchUrl(
+                Uri.parse('https://www.linkedin.com/in/abdulmalek-al-khatib'));
+          },
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: Image.asset(icons[2]),
           ),
         ),
         const SizedBox(
           width: 12.0,
         ),
-        ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
-          child: AspectRatio(
-            aspectRatio: 1,
-            child: Image.asset(icons[4]),
+        GestureDetector(
+          onTap: () {
+            launchUrl(
+                Uri.parse('https://www.facebook.com/abdalmalek.akhatib/'));
+          },
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[3]),
+            ),
+          ),
+        ),
+        const SizedBox(
+          width: 12.0,
+        ),
+        GestureDetector(
+          onTap: () {
+            launchUrl(Uri.parse('https://www.instagram.com/abdalmalek_ak/'));
+          },
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            child: AspectRatio(
+              aspectRatio: 1,
+              child: Image.asset(icons[4]),
+            ),
           ),
         ),
         const SizedBox(

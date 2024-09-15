@@ -42,7 +42,7 @@ class DesktopLayout extends StatelessWidget {
         ),
         WhatCanIDoSection(),
         SizedBox(
-          height: 200,
+          height: 160,
         ),
         DeviderRow(text: "My projects"),
         SizedBox(
