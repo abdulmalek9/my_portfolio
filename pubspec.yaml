@@ -37,7 +37,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   gradient_borders: ^1.0.1
   device_preview: ^1.1.0
-  expandable_page_view: ^1.0.17
+  provider:
 
 dev_dependencies:
   flutter_test:

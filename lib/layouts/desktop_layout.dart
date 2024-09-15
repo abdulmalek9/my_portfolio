@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/desktop_widgets/about_me_detailes.dart';
 import 'package:my_portfolio/desktop_widgets/about_me_row.dart';
 import 'package:my_portfolio/desktop_widgets/card_desktop_builder.dart';
 import 'package:my_portfolio/desktop_widgets/desktop_header.dart';
@@ -26,6 +27,10 @@ class DesktopLayout extends StatelessWidget {
         DeviderRow(
           text: "About Me",
         ),
+        SizedBox(
+          height: 100,
+        ),
+        AboutMeDetailes(),
         SizedBox(
           height: 100,
         ),
