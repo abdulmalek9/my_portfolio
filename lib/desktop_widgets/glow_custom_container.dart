@@ -15,15 +15,15 @@ class GlowCustomContainer extends StatelessWidget {
       decoration: ShapeDecoration(
         shadows: [
           BoxShadow(
-              color: const Color(0xFF6EABFE).withOpacity(0.5),
-              blurRadius: 14.90, //42.49,
+              color: const Color(0xFF6EABFE).withOpacity(0.4),
+              blurRadius: 12.90, //42.49,
               offset: const Offset(0, 0),
               spreadRadius: 1,
               blurStyle: BlurStyle.outer),
         ],
         gradient: LinearGradient(colors: [
           const Color(0xFFA1D8FF).withOpacity(0.4),
-          const Color(0xFFD1B6FF).withOpacity(0.5)
+          const Color(0xFFD1B6FF).withOpacity(0.55)
         ]),
         shape: const GradientBoxBorder(
           width: 2,

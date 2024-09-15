@@ -21,7 +21,7 @@ class CustomDevider extends StatelessWidget {
           ],
           color: const Color(0xff86CDFF),
           shape:
-              BeveledRectangleBorder(borderRadius: BorderRadius.circular(12))),
+              BeveledRectangleBorder(borderRadius: BorderRadius.circular(2))),
     );
   }
 }

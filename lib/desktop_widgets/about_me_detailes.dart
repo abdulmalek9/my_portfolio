@@ -10,8 +10,11 @@ class AboutMeDetailes extends StatelessWidget {
     "Dart",
     "Python",
     "Flask",
+    "Mysql",
+    "C++",
+    "Java",
+    "Kotlin"
   ];
-  static List<String> tools2 = ["Mysql", "C++", "Java", "Kotlen"];
 
   @override
   Widget build(BuildContext context) {
@@ -38,10 +41,6 @@ class AboutMeDetailes extends StatelessWidget {
             height: 18,
           ),
           ToolsNameBuilder(tools: tools),
-          const SizedBox(
-            height: 8,
-          ),
-          ToolsNameBuilder(tools: tools2)
         ],
       ),
     );
@@ -61,21 +60,20 @@ class ToolsNameBuilder extends StatelessWidget {
     return Row(
         children: List.generate(
       tools.length,
-      (index) => Expanded(
-        child: Padding(
-          padding: const EdgeInsets.only(right: 18.0),
-          child: Container(
-            height: 38,
-            decoration: const BoxDecoration(
-                border: GradientBoxBorder(
-                    width: 4,
-                    gradient: LinearGradient(
-                        colors: [Color(0xFF5FBCFF), Color(0xFFA471FB)]))),
-            child: Center(
-              child: Text(
-                tools[index],
-                style: AppStyles.styleMedium14(context, null),
-              ),
+      (index) => Padding(
+        padding: const EdgeInsets.only(right: 10.0),
+        child: Container(
+          width: 65,
+          height: 28,
+          decoration: const BoxDecoration(
+              border: GradientBoxBorder(
+                  width: 1.5,
+                  gradient: LinearGradient(
+                      colors: [Color(0xFF5FBCFF), Color(0xFFA471FB)]))),
+          child: Center(
+            child: Text(
+              tools[index],
+              style: AppStyles.styleMedium14(context, 12),
             ),
           ),
         ),

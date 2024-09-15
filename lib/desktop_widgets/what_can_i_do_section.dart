@@ -1,11 +1,25 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/glow_custom_container.dart';
+import 'package:my_portfolio/desktop_widgets/what_can_i_do_section_body.dart';
+import 'package:my_portfolio/models/my_skill_card_model.dart';
 import 'package:my_portfolio/utils/app_images.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
-class WhatCanIDoSection extends StatelessWidget {
+class WhatCanIDoSection extends StatefulWidget {
   const WhatCanIDoSection({super.key});
 
+  @override
+  State<WhatCanIDoSection> createState() => _WhatCanIDoSectionState();
+}
+
+class _WhatCanIDoSectionState extends State<WhatCanIDoSection> {
+  List<MySkillCardModel> mySkillCardModel = [
+    MySkillCardModel(
+        skillImage: Assets.imagesProgramingScreen,
+        skillName: "APP Development"),
+    MySkillCardModel(skillImage: Assets.imagesAi0101, skillName: "Ai"),
+  ];
+
+  bool isClicked = false;
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -13,21 +27,28 @@ class WhatCanIDoSection extends StatelessWidget {
       child: Row(
         children: [
           Expanded(
-            child: GlowCustomContainer(
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  isClicked = !isClicked;
+                });
+              },
               child: Column(
+                mainAxisSize: MainAxisSize.min,
                 children: [
-                  Image.asset(
-                    width: 400,
-                    height: 200,
-                    Assets.imagesProgramingScreen,
+                  WhatCanIDoSectionBody(
+                    mySkillCardModel: mySkillCardModel[0],
                   ),
-                  Text(
-                    "Programming Skills",
-                    style: AppStyles.styleBold24(context),
-                  ),
-                  const SizedBox(
-                    height: 30,
-                  ),
+                  isClicked
+                      ? const SizedBox(
+                          height: 24,
+                        )
+                      : const SizedBox(),
+                  isClicked
+                      ? const Align(
+                          alignment: Alignment.centerLeft,
+                          child: MyAppSkillDetailes())
+                      : const SizedBox(),
                 ],
               ),
             ),
@@ -36,26 +57,40 @@ class WhatCanIDoSection extends StatelessWidget {
             width: 60,
           ),
           Expanded(
-              child: GlowCustomContainer(
-            child: Column(
-              children: [
-                Image.asset(
-                  width: 400,
-                  height: 200,
-                  Assets.imagesProgramingScreen,
-                ),
-                Text(
-                  "Ai Skills",
-                  style: AppStyles.styleBold24(context),
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-              ],
+            child: WhatCanIDoSectionBody(
+              mySkillCardModel: mySkillCardModel[1],
             ),
-          )),
+          ),
         ],
       ),
+    );
+  }
+}
+
+class MyAppSkillDetailes extends StatelessWidget {
+  const MyAppSkillDetailes({super.key});
+
+  static List<String> skill = [
+    "- Firebase Supabase Auth/Cloud",
+    "- Responsive Apps",
+    "- State Managments",
+    "- REST APIs",
+    "- Clean Code"
+  ];
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(left: 10.0),
+      child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: List.generate(
+              skill.length,
+              (index) => Text(
+                    skill[index],
+                    style: AppStyles.styleMedium14(context, 16)
+                        .copyWith(height: 1.8),
+                  ))),
     );
   }
 }

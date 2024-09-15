@@ -1,14 +1,23 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
+  /// Assets for imagesAi01
+  /// assets/images/ai-01.png
+  static const String imagesAi01 = "assets/images/ai-01.png";
+
+  /// Assets for imagesAi0101
+  /// assets/images/ai-01-01.png
+  static const String imagesAi0101 = "assets/images/ai-01-01.png";
+
   /// Assets for imagesChatApp
   /// assets/images/chat_app.png
   static const String imagesChatApp = "assets/images/chat_app.png";
 
   /// Assets for imagesCustomContainer
   /// assets/images/custom_container.png
-  static const String imagesCustomContainer = "assets/images/custom_container.png";
+  static const String imagesCustomContainer =
+      "assets/images/custom_container.png";
 
   /// Assets for imagesDashboard
   /// assets/images/dashboard.png
@@ -48,7 +57,8 @@ class Assets {
 
   /// Assets for imagesProgramingScreen
   /// assets/images/programing_screen.png
-  static const String imagesProgramingScreen = "assets/images/programing_screen.png";
+  static const String imagesProgramingScreen =
+      "assets/images/programing_screen.png";
 
   /// Assets for imagesShapes
   /// assets/images/shapes.png
@@ -78,4 +88,3 @@ class Assets {
   /// assets/images/whatsapp_icon.png
   static const String imagesWhatsappIcon = "assets/images/whatsapp_icon.png";
 }
-
