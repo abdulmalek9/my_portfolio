@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/mobile_widget/resume_container.dart';
 import 'package:my_portfolio/provider/scroller_provider.dart';
@@ -13,7 +11,6 @@ class DesktopHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    log(MediaQuery.sizeOf(context).width.toString());
     return Consumer(
       builder: (context, value, child) => Row(
         children: [
@@ -28,7 +25,7 @@ class DesktopHeader extends StatelessWidget {
             child: GestureDetector(
               onTap: () {
                 context.read<ScrollerProvider>().changePageIndex(
-                    context.read<ScrollerProvider>().about1SectionKey);
+                    context.read<ScrollerProvider>().aboutSectionKey);
               },
               child: Text(
                 headerItem[0],
@@ -41,7 +38,7 @@ class DesktopHeader extends StatelessWidget {
             child: GestureDetector(
               onTap: () {
                 context.read<ScrollerProvider>().changePageIndex(
-                    context.read<ScrollerProvider>().about2SectionKey);
+                    context.read<ScrollerProvider>().serviceSectionKey);
               },
               child: Text(
                 headerItem[1],
@@ -54,7 +51,7 @@ class DesktopHeader extends StatelessWidget {
             child: GestureDetector(
               onTap: () {
                 context.read<ScrollerProvider>().changePageIndex(
-                    context.read<ScrollerProvider>().aboutSectionKey);
+                    context.read<ScrollerProvider>().projectSectionKey);
               },
               child: Text(
                 headerItem[2],

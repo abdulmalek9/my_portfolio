@@ -7,6 +7,7 @@ class CustomContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      width: double.infinity,
       padding: const EdgeInsets.only(left: 35, right: 20, top: 40),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
