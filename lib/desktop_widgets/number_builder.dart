@@ -18,7 +18,7 @@ class NumberBuilder extends StatelessWidget {
         children: List.generate(
           NumberBuilder.numbers.length,
           (index) => Padding(
-            padding: const EdgeInsets.only(bottom: 45.0),
+            padding: const EdgeInsets.only(bottom: 40.0),
             child: GestureDetector(
               onTap: () {
                 context
@@ -42,13 +42,18 @@ class NumberBuilder extends StatelessWidget {
                         ],
                       )
                     : null,
-                child: Text(
-                  NumberBuilder.numbers[index],
-                  style: AppStyles.styleBold26(context).copyWith(
-                    color:
-                        index == context.watch<ProjectIndexProvider>().pageindex
-                            ? Colors.white
-                            : null,
+                child: Container(
+                  alignment: Alignment.center,
+                  width: 40,
+                  height: 40,
+                  child: Text(
+                    NumberBuilder.numbers[index],
+                    style: AppStyles.styleBold26(context).copyWith(
+                      color: index ==
+                              context.watch<ProjectIndexProvider>().pageindex
+                          ? Colors.white
+                          : null,
+                    ),
                   ),
                 ),
               ),

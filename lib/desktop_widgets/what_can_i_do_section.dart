@@ -16,7 +16,7 @@ class _WhatCanIDoSectionState extends State<WhatCanIDoSection> {
     MySkillCardModel(
         skillImage: Assets.imagesProgramingScreen,
         skillName: "APP Development"),
-    MySkillCardModel(skillImage: Assets.imagesAi0101, skillName: "Ai"),
+    MySkillCardModel(skillImage: Assets.imagesAi01, skillName: "Ai"),
   ];
 
   bool isClicked = false;

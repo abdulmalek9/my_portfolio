@@ -64,8 +64,8 @@ class IconBuilder extends StatelessWidget {
     Assets.imagesGithupIcon,
     Assets.imagesEmaleIcon,
     Assets.imagesLinkedinIcon,
-    Assets.imagesTelegrameIcon,
-    Assets.imagesWhatsappIcon,
+    Assets.imagesFacebookIcon,
+    Assets.imagesInstagrameIcon,
   ];
 
   @override
@@ -77,75 +77,75 @@ class IconBuilder extends StatelessWidget {
             launchUrl(Uri.parse('https://github.com/abdulmalek9'));
           },
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            constraints: const BoxConstraints(maxWidth: 80, maxHeight: 80),
             child: AspectRatio(
               aspectRatio: 1,
               child: Image.asset(icons[0]),
             ),
           ),
         ),
-        const SizedBox(
-          width: 12.0,
-        ),
+        // const SizedBox(
+        //   width: 12.0,
+        // ),
         GestureDetector(
           onTap: () {
             launchUrl(Uri.parse('https://github.com/abdulmalek9'));
           },
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            constraints: const BoxConstraints(maxWidth: 80, maxHeight: 80),
             child: AspectRatio(
               aspectRatio: 1,
               child: Image.asset(icons[1]),
             ),
           ),
         ),
-        const SizedBox(
-          width: 12.0,
-        ),
+        // const SizedBox(
+        //   width: 12.0,
+        // ),
         GestureDetector(
           onTap: () {
             launchUrl(
                 Uri.parse('https://www.linkedin.com/in/abdulmalek-al-khatib'));
           },
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            constraints: const BoxConstraints(maxWidth: 80, maxHeight: 80),
             child: Image.asset(icons[2]),
           ),
         ),
-        const SizedBox(
-          width: 12.0,
-        ),
+        // const SizedBox(
+        //   width: 12.0,
+        // ),
         GestureDetector(
           onTap: () {
             launchUrl(
                 Uri.parse('https://www.facebook.com/abdalmalek.akhatib/'));
           },
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            constraints: const BoxConstraints(maxWidth: 80, maxHeight: 80),
             child: AspectRatio(
               aspectRatio: 1,
               child: Image.asset(icons[3]),
             ),
           ),
         ),
-        const SizedBox(
-          width: 12.0,
-        ),
+        // const SizedBox(
+        //   width: 12.0,
+        // ),
         GestureDetector(
           onTap: () {
             launchUrl(Uri.parse('https://www.instagram.com/abdalmalek_ak/'));
           },
           child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 60, maxHeight: 60),
+            constraints: const BoxConstraints(maxWidth: 80, maxHeight: 80),
             child: AspectRatio(
               aspectRatio: 1,
               child: Image.asset(icons[4]),
             ),
           ),
         ),
-        const SizedBox(
-          width: 12.0,
-        ),
+        // const SizedBox(
+        //   width: 12.0,
+        // ),
       ],
     );
   }
