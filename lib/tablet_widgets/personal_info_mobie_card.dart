@@ -37,6 +37,9 @@ class PersonalInfoMobieCard extends StatelessWidget {
           style: AppStyles.styleMedium14(context, 18),
           textAlign: TextAlign.justify,
         ),
+        const SizedBox(
+          height: 40,
+        ),
       ],
     );
   }

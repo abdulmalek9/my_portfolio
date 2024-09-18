@@ -85,64 +85,64 @@ class DesktopLayout extends StatelessWidget {
   }
 }
 
-class BodyUtils {
-  static const List<Widget> views = [
-    Padding(
-      padding: EdgeInsets.symmetric(horizontal: 16.0),
-      child: DesktopHeader(),
-    ),
-    SizedBox(
-      height: 40,
-    ),
-    CartDesktopBuilder(),
-    SizedBox(
-      height: 140,
-    ),
-    KeyedSubtree(
-      // key: context.read<ScrollerProvider>().aboutSectionKey,
-      child: SizedBox(
-          child: SizedBox(
-        height: 20,
-      )),
-    ),
-    DeviderRow(
-      text: "About Me",
-    ),
-    SizedBox(
-      height: 100,
-    ),
-    AboutMeDetailes(),
-    SizedBox(
-      height: 80,
-    ),
-    KeyedSubtree(
-      // key: context.read<ScrollerProvider>().serviceSectionKey,
-      child: SizedBox(
-        height: 20,
-      ),
-    ),
-    DeviderRow(
-      text: "What Can I Do?",
-    ),
-    SizedBox(
-      height: 120,
-    ),
-    WhatCanIDoSection(),
-    SizedBox(
-      height: 140,
-    ),
-    KeyedSubtree(
-        // key: context.read<ScrollerProvider>().projectSectionKey,
-        child: SizedBox(
-      height: 20,
-    )),
-    DeviderRow(text: "My projects"),
-    SizedBox(
-      height: 90,
-    ),
-    MyProjectSection(),
-    SizedBox(
-      height: 90,
-    ),
-  ];
-}
+// class BodyUtils {
+//   static const List<Widget> views = [
+//     Padding(
+//       padding: EdgeInsets.symmetric(horizontal: 16.0),
+//       child: DesktopHeader(),
+//     ),
+//     SizedBox(
+//       height: 40,
+//     ),
+//     CartDesktopBuilder(),
+//     SizedBox(
+//       height: 140,
+//     ),
+//     KeyedSubtree(
+//       // key: context.read<ScrollerProvider>().aboutSectionKey,
+//       child: SizedBox(
+//           child: SizedBox(
+//         height: 20,
+//       )),
+//     ),
+//     DeviderRow(
+//       text: "About Me",
+//     ),
+//     SizedBox(
+//       height: 100,
+//     ),
+//     AboutMeDetailes(),
+//     SizedBox(
+//       height: 80,
+//     ),
+//     KeyedSubtree(
+//       // key: context.read<ScrollerProvider>().serviceSectionKey,
+//       child: SizedBox(
+//         height: 20,
+//       ),
+//     ),
+//     DeviderRow(
+//       text: "What Can I Do?",
+//     ),
+//     SizedBox(
+//       height: 120,
+//     ),
+//     WhatCanIDoSection(),
+//     SizedBox(
+//       height: 140,
+//     ),
+//     KeyedSubtree(
+//         // key: context.read<ScrollerProvider>().projectSectionKey,
+//         child: SizedBox(
+//       height: 20,
+//     )),
+//     DeviderRow(text: "My projects"),
+//     SizedBox(
+//       height: 90,
+//     ),
+//     MyProjectSection(),
+//     SizedBox(
+//       height: 90,
+//     ),
+//   ];
+// }

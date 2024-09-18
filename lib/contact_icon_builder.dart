@@ -107,12 +107,14 @@ class IconMobileBuilder extends StatelessWidget {
     Assets.imagesInstagrameIcon,
   ];
 
-  final double maxWidth = 60;
-  final double maxHeight = 60;
+  final double maxWidth = 70;
+  final double maxHeight = 70;
 
   @override
   Widget build(BuildContext context) {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      mainAxisAlignment: MainAxisAlignment.center,
       children: [
         GestureDetector(
           onTap: () {

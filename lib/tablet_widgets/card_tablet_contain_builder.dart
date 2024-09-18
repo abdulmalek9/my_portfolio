@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/custom_devider.dart';
+import 'package:my_portfolio/contact_icon_builder.dart';
 import 'package:my_portfolio/tablet_widgets/personal_info_mobie_card.dart';
 import 'package:my_portfolio/utils/app_images.dart';
 
@@ -11,11 +11,12 @@ class CardTabletContainBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.center,
+      // crossAxisAlignment: CrossAxisAlignment.center,
+      // mainAxisAlignment: MainAxisAlignment.center,
       children: [
         MyPictureWidget(),
         PersonalInfoMobieCard(),
+        IconMobileBuilder()
       ],
     );
   }

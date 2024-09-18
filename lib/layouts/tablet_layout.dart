@@ -4,6 +4,7 @@ import 'package:my_portfolio/desktop_widgets/what_can_i_do_section.dart';
 import 'package:my_portfolio/tablet_widgets/about_me_detailes_tablet_widget.dart';
 import 'package:my_portfolio/tablet_widgets/card_tablet_builder.dart';
 import 'package:my_portfolio/tablet_widgets/header.dart';
+import 'package:my_portfolio/tablet_widgets/my_projects_sectoin_tablet.dart';
 
 class TabletLayout extends StatelessWidget {
   const TabletLayout({super.key});
@@ -16,7 +17,7 @@ class TabletLayout extends StatelessWidget {
         children: [
           Header(),
           SizedBox(
-            height: 40,
+            height: 25,
           ),
           CardTabletBuilder(),
           SizedBox(
@@ -46,6 +47,14 @@ class TabletLayout extends StatelessWidget {
           SizedBox(
             height: 140,
           ),
+          DeviderRow(
+            edgeInsetsGeometry: EdgeInsets.symmetric(horizontal: 80),
+            text: "My projects",
+          ),
+          SizedBox(
+            height: 120,
+          ),
+          MyProjectsSectionTablet(),
         ],
       ),
     );

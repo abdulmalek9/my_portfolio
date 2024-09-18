@@ -7,30 +7,33 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Flexible(
-          child: Image.asset(width: 85, height: 85, Assets.imagesMyLogo04),
-        ),
-        const Spacer(
-          flex: 10,
-        ),
-        const ResumeContainer(),
-        const SizedBox(
-          width: 16,
-        ),
-        IconButton(
-            padding: EdgeInsets.zero,
-            onPressed: () {},
-            icon: const Icon(
-              Icons.menu,
-              color: Colors.white,
-            )),
-        const SizedBox(
-          width: 16,
-        ),
-      ],
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 18.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Flexible(
+            child: Image.asset(width: 85, height: 85, Assets.imagesMyLogo04),
+          ),
+          const Spacer(
+            flex: 10,
+          ),
+          const ResumeContainer(),
+          const SizedBox(
+            width: 16,
+          ),
+          IconButton(
+              padding: EdgeInsets.zero,
+              onPressed: () {},
+              icon: const Icon(
+                Icons.menu,
+                color: Colors.white,
+              )),
+          const SizedBox(
+            width: 16,
+          ),
+        ],
+      ),
     );
   }
 }

@@ -14,7 +14,7 @@ class CardTabletBuilder extends StatelessWidget {
       child: SizedBox(
         // width: double.infinity,
         child: CustomContainer(
-          edgeInsetsGeometry: EdgeInsets.only(left: 50, top: 40, bottom: 40),
+          edgeInsetsGeometry: EdgeInsets.only(top: 20, bottom: 20),
           child: CardTabletContainBuilder(),
         ),
       ),
