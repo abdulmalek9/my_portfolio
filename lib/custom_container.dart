@@ -2,13 +2,16 @@ import 'package:flutter/material.dart';
 import 'package:gradient_borders/gradient_borders.dart';
 
 class CustomContainer extends StatelessWidget {
-  const CustomContainer({super.key, required this.child});
+  const CustomContainer(
+      {super.key, required this.child, this.edgeInsetsGeometry});
   final Widget child;
+  final EdgeInsetsGeometry? edgeInsetsGeometry;
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: double.infinity,
-      padding: const EdgeInsets.only(left: 35, right: 20, top: 40),
+      // width: double.infinity,
+      padding: edgeInsetsGeometry ??
+          const EdgeInsets.only(left: 35, right: 20, top: 40),
       decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(8.0),
           border: GradientBoxBorder(

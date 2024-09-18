@@ -20,9 +20,12 @@ class WhatCanIDoSectionBody extends StatelessWidget {
             height: 200,
             mySkillCardModel.skillImage,
           ),
-          Text(
-            mySkillCardModel.skillName,
-            style: AppStyles.styleBold24(context),
+          FittedBox(
+            fit: BoxFit.scaleDown,
+            child: Text(
+              mySkillCardModel.skillName,
+              style: AppStyles.styleBold24(context),
+            ),
           ),
           const SizedBox(
             height: 14,

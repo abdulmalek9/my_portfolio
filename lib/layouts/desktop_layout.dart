@@ -27,7 +27,7 @@ class DesktopLayout extends StatelessWidget {
           ),
           const CartDesktopBuilder(),
           const SizedBox(
-            height: 140,
+            height: 188,
           ),
           Consumer(
             builder: (context, value, child) => KeyedSubtree(

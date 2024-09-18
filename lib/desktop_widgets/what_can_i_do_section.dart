@@ -5,7 +5,8 @@ import 'package:my_portfolio/models/my_skill_card_model.dart';
 import 'package:my_portfolio/utils/app_images.dart';
 
 class WhatCanIDoSection extends StatefulWidget {
-  const WhatCanIDoSection({super.key});
+  const WhatCanIDoSection({super.key, this.edgeInsetsGeometry});
+  final EdgeInsetsGeometry? edgeInsetsGeometry;
 
   @override
   State<WhatCanIDoSection> createState() => _WhatCanIDoSectionState();
@@ -24,7 +25,8 @@ class _WhatCanIDoSectionState extends State<WhatCanIDoSection> {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 190),
+      padding: widget.edgeInsetsGeometry ??
+          const EdgeInsets.symmetric(horizontal: 190),
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [

@@ -3,12 +3,14 @@ import 'package:my_portfolio/desktop_widgets/custom_devider.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
 class DeviderRow extends StatelessWidget {
-  const DeviderRow({super.key, required this.text});
+  const DeviderRow({super.key, required this.text, this.edgeInsetsGeometry});
   final String text;
+  final EdgeInsetsGeometry? edgeInsetsGeometry;
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 120.0),
+      padding:
+          edgeInsetsGeometry ?? const EdgeInsets.symmetric(horizontal: 120.0),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         // crossAxisAlignment: CrossAxisAlignment.stretch,
