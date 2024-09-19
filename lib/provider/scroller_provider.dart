@@ -3,12 +3,21 @@ import 'package:flutter/material.dart';
 class ScrollerProvider extends ChangeNotifier {
   GlobalKey aboutSectionKey = GlobalKey();
   GlobalKey projectSectionKey = GlobalKey();
-
   GlobalKey serviceSectionKey = GlobalKey();
-
+  GlobalKey<ScaffoldState> scaffoldKey = GlobalKey();
   void changePageIndex(GlobalKey key) async {
     final context = key.currentContext;
     if (context != null) {
+      Scrollable.ensureVisible(context,
+          duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
+    }
+    notifyListeners();
+  }
+
+  void changePageIndexDrawer(GlobalKey key) async {
+    final context = key.currentContext;
+    if (context != null) {
+      print("object");
       Scrollable.ensureVisible(context,
           duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
     }

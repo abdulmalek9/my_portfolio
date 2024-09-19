@@ -9,41 +9,39 @@ class ResumeContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Flexible(
-      child: ConstrainedBox(
-        constraints: const BoxConstraints(maxHeight: 28, maxWidth: 100),
-        child: GestureDetector(
-          onTap: () {
-            launchUrl(Uri.parse(
-                "https://drive.google.com/drive/folders/192VpgXtZOC0YfxIACNW1T2wNba_4EfDh?usp=sharing"));
-          },
-          child: Container(
-            decoration: ShapeDecoration(
-              color: const Color(0xFF050C13),
-              shape: RoundedRectangleBorder(
-                side: const BorderSide(
-                  width: 0.54,
-                  strokeAlign: BorderSide.strokeAlignOutside,
-                  color: Color(0xFF5FBCFF),
-                ),
-                borderRadius: BorderRadius.circular(3.22),
+    return ConstrainedBox(
+      constraints: const BoxConstraints(maxHeight: 28, maxWidth: 90),
+      child: GestureDetector(
+        onTap: () {
+          launchUrl(Uri.parse(
+              "https://drive.google.com/drive/folders/192VpgXtZOC0YfxIACNW1T2wNba_4EfDh?usp=sharing"));
+        },
+        child: Container(
+          decoration: ShapeDecoration(
+            color: const Color(0xFF050C13),
+            shape: RoundedRectangleBorder(
+              side: const BorderSide(
+                width: 0.54,
+                strokeAlign: BorderSide.strokeAlignOutside,
+                color: Color(0xFF5FBCFF),
               ),
-              shadows: const [
-                BoxShadow(
-                  color: Color(0xFF6EABFE),
-                  blurRadius: 12.90,
-                  offset: Offset(0, 0),
-                  spreadRadius: 0,
-                ),
-              ],
+              borderRadius: BorderRadius.circular(3.22),
             ),
-            child: Center(
-              child: FittedBox(
-                fit: BoxFit.scaleDown,
-                child: Text(
-                  "Resume",
-                  style: AppStyles.styleRegular14(context),
-                ),
+            shadows: const [
+              BoxShadow(
+                color: Color(0xFF6EABFE),
+                blurRadius: 12.90,
+                offset: Offset(0, 0),
+                spreadRadius: 0,
+              ),
+            ],
+          ),
+          child: Center(
+            child: FittedBox(
+              fit: BoxFit.scaleDown,
+              child: Text(
+                "Resume",
+                style: AppStyles.styleRegular14(context),
               ),
             ),
           ),

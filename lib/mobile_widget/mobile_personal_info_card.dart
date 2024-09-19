@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
-class PersonalInfoMobieCard extends StatelessWidget {
-  const PersonalInfoMobieCard({
+class MobilePersonalInfoCard extends StatelessWidget {
+  const MobilePersonalInfoCard({
     super.key,
   });
 

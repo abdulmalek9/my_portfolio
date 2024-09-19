@@ -1,39 +1,36 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/contact_icon_builder.dart';
-import 'package:my_portfolio/tablet_widgets/personal_info_tablet_card.dart';
+import 'package:my_portfolio/mobile_widget/mobile_personal_info_card.dart';
 import 'package:my_portfolio/utils/app_images.dart';
 
-class CardTabletContainBuilder extends StatelessWidget {
-  const CardTabletContainBuilder({
-    super.key,
-  });
+class CardMobileContainBuilder extends StatelessWidget {
+  const CardMobileContainBuilder({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Column(
-      // crossAxisAlignment: CrossAxisAlignment.center,
-      // mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        MyPictureWidget(),
-        PersonalInfoTabletCard(),
-        IconMobileBuilder()
+        MyPicMobileWidget(),
+        FittedBox(child: MobilePersonalInfoCard()),
+        FittedBox(child: IconMobileBuilder()),
       ],
     );
   }
 }
 
-class MyPictureWidget extends StatelessWidget {
-  const MyPictureWidget({
+class MyPicMobileWidget extends StatelessWidget {
+  const MyPicMobileWidget({
     super.key,
   });
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(bottom: 12.0, right: 0),
+      padding: const EdgeInsets.only(bottom: 18.0),
       child: Container(
-        width: 98 * 2,
-        height: 98 * 2,
+        width: 65 * 2,
+        height: 65 * 2,
         decoration: ShapeDecoration(
             gradient: LinearGradient(colors: [
               const Color(0xFFAB93D3).withOpacity(0.8),

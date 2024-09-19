@@ -1,35 +1,51 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/mobile_widget/resume_container.dart';
+import 'package:my_portfolio/provider/scroller_provider.dart';
 import 'package:my_portfolio/utils/app_images.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:provider/provider.dart';
 
 class MobileHeader extends StatelessWidget {
   const MobileHeader({super.key});
 
-  static List headerItem = ["About", "Services", "Projects"];
-
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-      children: [
-        Flexible(
-          child: Image.asset(width: 85, height: 85, Assets.imagesMyLogo04),
-        ),
-        const SizedBox(
-          width: 48,
-        ),
-        for (int i = 0; i < headerItem.length; i++)
-          Text(
-            headerItem[i],
-            style: AppStyles.styleRegular14(context),
+    return Padding(
+      padding: const EdgeInsets.symmetric(horizontal: 12.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Image.asset(width: 80, height: 70, Assets.imagesMyLogo04),
+          const Spacer(
+            flex: 10,
           ),
-        const SizedBox(
-          width: 16,
-        ),
-        const ResumeContainer()
-      ],
+          const ResumeContainer(),
+          const SizedBox(
+            width: 16,
+          ),
+          Consumer(
+            builder: (context, value, child) => IconButton(
+                padding: EdgeInsets.zero,
+                onPressed: () {
+                  // Provider.of<ScrollerProvider>(context)
+                  //     .scaffoldKey
+                  //     .currentState!
+                  //     .openDrawer();
+                  context
+                      .read<ScrollerProvider>()
+                      .scaffoldKey
+                      .currentState!
+                      .openEndDrawer();
+                },
+                icon: const Icon(
+                  Icons.menu,
+                  color: Colors.white,
+                )),
+          ),
+          const SizedBox(
+            width: 16,
+          ),
+        ],
+      ),
     );
   }
 }

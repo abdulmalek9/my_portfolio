@@ -3,7 +3,7 @@ import 'package:gradient_borders/gradient_borders.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
 class AboutMeDetailesTabletWidget extends StatelessWidget {
-  const AboutMeDetailesTabletWidget({super.key});
+  const AboutMeDetailesTabletWidget({super.key, this.horizontalPadding});
 
   static List<String> tools = [
     "Flutter",
@@ -15,11 +15,12 @@ class AboutMeDetailesTabletWidget extends StatelessWidget {
     "Java",
     "Kotlin"
   ];
+  final double? horizontalPadding;
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 150.0),
+      padding: EdgeInsets.symmetric(horizontal: horizontalPadding ?? 150.0),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -61,7 +62,7 @@ class ToolsNameBuilder extends StatelessWidget {
         children: List.generate(
       tools.length,
       (index) => Padding(
-        padding: const EdgeInsets.only(right: 10.0),
+        padding: const EdgeInsets.only(right: 10.0, bottom: 10),
         child: Container(
           width: 65,
           height: 28,

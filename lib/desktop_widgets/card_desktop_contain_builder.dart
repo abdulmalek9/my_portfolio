@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/mobile_widget/personal_info_card.dart';
+import 'package:my_portfolio/desktop_widgets/personal_info_card.dart';
 import 'package:my_portfolio/utils/app_images.dart';
 
 class CardDesktopContainBuilder extends StatelessWidget {

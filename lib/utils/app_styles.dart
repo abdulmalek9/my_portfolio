@@ -22,6 +22,15 @@ abstract class AppStyles {
     );
   }
 
+  static TextStyle styleLight10(context) {
+    return TextStyle(
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 10),
+      fontFamily: 'Readex Pro',
+      fontWeight: FontWeight.w300,
+    );
+  }
+
   static TextStyle styleBold24(BuildContext context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
@@ -107,7 +116,7 @@ double getScaleFactor(context) {
 
   double width = MediaQuery.sizeOf(context).width;
   if (width < SizeConfig.tabletPoint) {
-    return width / 550;
+    return width / 800;
   } else if (width < SizeConfig.desktopPoint) {
     return width / 1000;
   } else {
