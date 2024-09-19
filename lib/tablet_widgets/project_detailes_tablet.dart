@@ -24,16 +24,20 @@ class ProjectDetailesTablet extends StatelessWidget {
         Column(
           // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(
-              projectModel.projectName,
-              style: AppStyles.styleSemiBold40(context),
+            FittedBox(
+              child: Text(
+                projectModel.projectName,
+                style: AppStyles.styleSemiBold40(context),
+              ),
             ),
             const SizedBox(
               height: 38,
             ),
-            Text(
-              projectModel.projectTitle,
-              style: AppStyles.styleRegular18(context),
+            FittedBox(
+              child: Text(
+                projectModel.projectTitle,
+                style: AppStyles.styleRegular18(context),
+              ),
             )
           ],
         ),

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
 class MyAppSkillDetailes extends StatelessWidget {
-  const MyAppSkillDetailes({super.key});
-
+  const MyAppSkillDetailes({super.key, this.fontSize});
+  final double? fontSize;
   static List<String> skill = [
     "- Firebase Supabase Auth/Cloud",
     "- Responsive Apps",
@@ -21,15 +21,15 @@ class MyAppSkillDetailes extends StatelessWidget {
             skill.length,
             (index) => Text(
                   skill[index],
-                  style: AppStyles.styleMedium14(context, 16)
+                  style: AppStyles.styleMedium14(context, fontSize ?? 16)
                       .copyWith(height: 1.8),
                 )));
   }
 }
 
 class MyAISkillDetailes extends StatelessWidget {
-  const MyAISkillDetailes({super.key});
-
+  const MyAISkillDetailes({super.key, this.fontSize});
+  final double? fontSize;
   static List<String> skill = [
     "- Large Language Model",
     "- Computer Vision",
@@ -45,7 +45,7 @@ class MyAISkillDetailes extends StatelessWidget {
             skill.length,
             (index) => Text(
                   skill[index],
-                  style: AppStyles.styleMedium14(context, 16)
+                  style: AppStyles.styleMedium14(context, fontSize ?? 16)
                       .copyWith(height: 1.8),
                 )));
   }
