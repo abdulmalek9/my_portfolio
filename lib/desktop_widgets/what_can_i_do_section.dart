@@ -31,7 +31,10 @@ class _WhatCanIDoSectionState extends State<WhatCanIDoSection> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            child: GestureDetector(
+            child: InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
               onTap: () {
                 setState(() {
                   isClicked = !isClicked;
@@ -48,7 +51,10 @@ class _WhatCanIDoSectionState extends State<WhatCanIDoSection> {
             width: 40,
           ),
           Expanded(
-            child: GestureDetector(
+            child: InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
               onTap: () {
                 setState(() {
                   isAiClicked = !isAiClicked;

@@ -17,7 +17,7 @@ class IconBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        GestureDetector(
+        InkWell(
           onTap: () {
             launchUrl(Uri.parse('https://github.com/abdulmalek9'));
           },
@@ -32,9 +32,9 @@ class IconBuilder extends StatelessWidget {
         // const SizedBox(
         //   width: 12.0,
         // ),
-        GestureDetector(
+        InkWell(
           onTap: () {
-            launchUrl(Uri.parse('https://github.com/abdulmalek9'));
+            launchUrl(Uri.parse('Mailto:akabdalmalek@gmail.com'));
           },
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 80, maxHeight: 80),
@@ -47,7 +47,7 @@ class IconBuilder extends StatelessWidget {
         // const SizedBox(
         //   width: 12.0,
         // ),
-        GestureDetector(
+        InkWell(
           onTap: () {
             launchUrl(
                 Uri.parse('https://www.linkedin.com/in/abdulmalek-al-khatib'));
@@ -60,7 +60,7 @@ class IconBuilder extends StatelessWidget {
         // const SizedBox(
         //   width: 12.0,
         // ),
-        GestureDetector(
+        InkWell(
           onTap: () {
             launchUrl(
                 Uri.parse('https://www.facebook.com/abdalmalek.akhatib/'));
@@ -76,7 +76,7 @@ class IconBuilder extends StatelessWidget {
         // const SizedBox(
         //   width: 12.0,
         // ),
-        GestureDetector(
+        InkWell(
           onTap: () {
             launchUrl(Uri.parse('https://www.instagram.com/abdalmalek_ak/'));
           },
@@ -131,7 +131,7 @@ class IconMobileBuilder extends StatelessWidget {
         // ),
         GestureDetector(
           onTap: () {
-            launchUrl(Uri.parse('https://github.com/abdulmalek9'));
+            launchUrl(Uri.parse('Mailto:akabdalmalek@gmail.com'));
           },
           child: ConstrainedBox(
             constraints:

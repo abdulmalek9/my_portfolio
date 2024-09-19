@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/contact_divider.dart';
 import 'package:my_portfolio/desktop_widgets/about_me_detailes.dart';
 import 'package:my_portfolio/desktop_widgets/about_me_row.dart';
 import 'package:my_portfolio/desktop_widgets/card_desktop_builder.dart';
 import 'package:my_portfolio/desktop_widgets/desktop_header.dart';
 import 'package:my_portfolio/desktop_widgets/my_project_section.dart';
 import 'package:my_portfolio/desktop_widgets/what_can_i_do_section.dart';
+import 'package:my_portfolio/get_in_touch.dart';
 import 'package:my_portfolio/provider/scroller_provider.dart';
 import 'package:provider/provider.dart';
 
@@ -79,6 +81,8 @@ class DesktopLayout extends StatelessWidget {
           const SizedBox(
             height: 90,
           ),
+          const ContactDivider(),
+          const GetInTouch(),
         ],
       ),
     );

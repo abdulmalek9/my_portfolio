@@ -29,7 +29,7 @@ class CustomDrawer extends StatelessWidget {
                 height: 80,
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 12.0),
+                padding: const EdgeInsets.only(bottom: 16.0),
                 child: GestureDetector(
                   onTap: () {
                     // Provider.of<ScrollerProvider>(context).changePageIndex(
@@ -49,11 +49,12 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 12.0),
+                padding: const EdgeInsets.only(bottom: 16.0),
                 child: GestureDetector(
                   onTap: () {
                     context.read<ScrollerProvider>().changePageIndexDrawer(
                         context.read<ScrollerProvider>().serviceSectionKey);
+                    Navigator.pop(context);
                   },
                   child: DrawerItem(
                     headerItem: headerItem[1],
@@ -62,20 +63,16 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 12.0),
+                padding: const EdgeInsets.only(bottom: 16.0),
                 child: GestureDetector(
                   onTap: () {
                     // Provider.of<ScrollerProvider>(context)
                     //     .changePageIndexDrawer(
                     //         Provider.of<ScrollerProvider>(context)
-                    //             .projectSectionKey);
-                    context
-                        .read<ScrollerProvider>()
-                        .scaffoldKey
-                        .currentState!
-                        .closeEndDrawer();
+                    //             .projectSectionKey)
                     context.read<ScrollerProvider>().changePageIndexDrawer(
                         context.read<ScrollerProvider>().projectSectionKey);
+                    Navigator.pop(context);
                   },
                   child: DrawerItem(
                     headerItem: headerItem[2],

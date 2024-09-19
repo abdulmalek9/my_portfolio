@@ -22,7 +22,7 @@ class DesktopHeader extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 12.0),
-            child: GestureDetector(
+            child: InkWell(
               onTap: () {
                 context.read<ScrollerProvider>().changePageIndex(
                     context.read<ScrollerProvider>().aboutSectionKey);
@@ -35,7 +35,7 @@ class DesktopHeader extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 12.0),
-            child: GestureDetector(
+            child: InkWell(
               onTap: () {
                 context.read<ScrollerProvider>().changePageIndex(
                     context.read<ScrollerProvider>().serviceSectionKey);
@@ -48,7 +48,7 @@ class DesktopHeader extends StatelessWidget {
           ),
           Padding(
             padding: const EdgeInsets.only(right: 12.0),
-            child: GestureDetector(
+            child: InkWell(
               onTap: () {
                 context.read<ScrollerProvider>().changePageIndex(
                     context.read<ScrollerProvider>().projectSectionKey);

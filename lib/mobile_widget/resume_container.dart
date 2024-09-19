@@ -11,7 +11,7 @@ class ResumeContainer extends StatelessWidget {
   Widget build(BuildContext context) {
     return ConstrainedBox(
       constraints: const BoxConstraints(maxHeight: 28, maxWidth: 90),
-      child: GestureDetector(
+      child: InkWell(
         onTap: () {
           launchUrl(Uri.parse(
               "https://drive.google.com/drive/folders/192VpgXtZOC0YfxIACNW1T2wNba_4EfDh?usp=sharing"));

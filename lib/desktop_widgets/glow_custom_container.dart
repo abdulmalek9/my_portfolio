@@ -5,13 +5,14 @@ class GlowCustomContainer extends StatelessWidget {
   const GlowCustomContainer({
     super.key,
     required this.child,
+    this.padding,
   });
-
+  final EdgeInsetsGeometry? padding;
   final Widget child;
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.only(left: 35, right: 20, top: 40),
+      padding: padding ?? const EdgeInsets.only(left: 35, right: 20, top: 40),
       decoration: ShapeDecoration(
         shadows: [
           BoxShadow(

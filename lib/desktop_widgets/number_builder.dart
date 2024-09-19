@@ -19,7 +19,10 @@ class NumberBuilder extends StatelessWidget {
           NumberBuilder.numbers.length,
           (index) => Padding(
             padding: const EdgeInsets.only(bottom: 40.0),
-            child: GestureDetector(
+            child: InkWell(
+              highlightColor: Colors.transparent,
+              hoverColor: Colors.transparent,
+              splashColor: Colors.transparent,
               onTap: () {
                 context
                     .read<ProjectIndexProvider>()
