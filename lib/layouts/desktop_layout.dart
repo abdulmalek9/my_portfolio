@@ -81,7 +81,9 @@ class DesktopLayout extends StatelessWidget {
           const SizedBox(
             height: 90,
           ),
-          const ContactDivider(),
+          const ContactDivider(
+            padding: 150,
+          ),
           const GetInTouch(),
         ],
       ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/models/project_model.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:my_portfolio/utils/size_config.dart';
 
 class ProjectDetailesTablet extends StatelessWidget {
   const ProjectDetailesTablet({super.key, required this.projectModel});
@@ -11,7 +12,7 @@ class ProjectDetailesTablet extends StatelessWidget {
     return Column(
       children: [
         ConstrainedBox(
-          constraints: const BoxConstraints(maxWidth: 500, maxHeight: 500),
+          constraints: const BoxConstraints(maxWidth: 450, maxHeight: 500),
           child: AspectRatio(
             aspectRatio: 1,
             child: Image.asset(
@@ -25,6 +26,7 @@ class ProjectDetailesTablet extends StatelessWidget {
           // crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FittedBox(
+              fit: BoxFit.scaleDown,
               child: Text(
                 projectModel.projectName,
                 style: AppStyles.styleSemiBold40(context),
@@ -34,9 +36,13 @@ class ProjectDetailesTablet extends StatelessWidget {
               height: 38,
             ),
             FittedBox(
+              fit: BoxFit.scaleDown,
               child: Text(
                 projectModel.projectTitle,
-                style: AppStyles.styleRegular18(context),
+                style:
+                    MediaQuery.sizeOf(context).width >= SizeConfig.tabletPoint
+                        ? AppStyles.styleRegular14(context)
+                        : AppStyles.styleRegular22(context),
               ),
             )
           ],

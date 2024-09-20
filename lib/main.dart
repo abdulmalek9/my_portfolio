@@ -1,8 +1,14 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/home_page.dart';
 
 void main() {
-  runApp(const MyPortfolio());
+  runApp(
+    DevicePreview(
+      enabled: true,
+      builder: (context) => const MyPortfolio(),
+    ),
+  );
 }
 
 class MyPortfolio extends StatelessWidget {
@@ -10,9 +16,11 @@ class MyPortfolio extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      locale: DevicePreview.locale(context),
+      builder: DevicePreview.appBuilder,
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: const SafeArea(child: HomePage()),
     );
   }
 }

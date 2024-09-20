@@ -87,7 +87,9 @@ class TabletLayout extends StatelessWidget {
           const SizedBox(
             height: 80,
           ),
-          const ContactDivider(),
+          const ContactDivider(
+            padding: 135,
+          ),
           const GetInTouch(),
         ],
       ),

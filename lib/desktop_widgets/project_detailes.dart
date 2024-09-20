@@ -22,7 +22,7 @@ class ProjectDetailes extends StatelessWidget {
             ),
             Text(
               projectModel.projectTitle,
-              style: AppStyles.styleRegular18(context),
+              style: AppStyles.styleRegular22(context),
             )
           ],
         ),

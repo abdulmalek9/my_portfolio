@@ -27,7 +27,7 @@ class _WhatCanIDoSectionState extends State<WhatCanIDoMobileSection> {
     return Padding(
       padding: widget.edgeInsetsGeometry ??
           const EdgeInsets.symmetric(horizontal: 190),
-      child: Row(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -46,7 +46,7 @@ class _WhatCanIDoSectionState extends State<WhatCanIDoMobileSection> {
             ),
           ),
           const SizedBox(
-            width: 38,
+            height: 38,
           ),
           GestureDetector(
             onTap: () {

@@ -3,15 +3,16 @@ import 'package:flutter/material.dart';
 class ContactDivider extends StatelessWidget {
   const ContactDivider({
     super.key,
+    this.padding,
   });
-
+  final double? padding;
   @override
   Widget build(BuildContext context) {
-    return const Padding(
-      padding: EdgeInsets.symmetric(horizontal: 50.0),
-      child: Divider(
+    return Padding(
+      padding: EdgeInsets.symmetric(horizontal: padding ?? 50.0),
+      child: const Divider(
         color: Color(0xFF6EABFE),
-        thickness: 1,
+        thickness: 0.8,
       ),
     );
   }

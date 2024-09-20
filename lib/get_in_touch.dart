@@ -18,7 +18,7 @@ class GetInTouch extends StatelessWidget {
           FittedBox(
             child: Text(
               "Get In Touch With Me:",
-              style: AppStyles.styleMedium14(context, 16),
+              style: AppStyles.styleMedium14(context, 18),
             ),
           ),
           const SizedBox(
@@ -66,7 +66,7 @@ class ContactDetailes extends StatelessWidget {
         FittedBox(
           child: Text(
             detailesName,
-            style: AppStyles.styleRegular14(context),
+            style: AppStyles.styleRegular16(context),
           ),
         ),
         const SizedBox(
@@ -75,7 +75,7 @@ class ContactDetailes extends StatelessWidget {
         FittedBox(
           child: Text(
             detailesContain,
-            style: AppStyles.styleRegular14(context),
+            style: AppStyles.styleRegular16(context),
           ),
         ),
       ],

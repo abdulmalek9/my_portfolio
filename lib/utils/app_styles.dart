@@ -4,6 +4,15 @@ import 'package:my_portfolio/utils/size_config.dart';
 // import 'package:responsive_dash_board/utils/size_config.dart';
 
 abstract class AppStyles {
+  static TextStyle styleRegular22(context) {
+    return TextStyle(
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 22),
+      fontFamily: 'Readex Pro',
+      fontWeight: FontWeight.w400,
+    );
+  }
+
   static TextStyle styleRegular18(context) {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
@@ -17,6 +26,15 @@ abstract class AppStyles {
     return TextStyle(
       color: const Color(0xFFFFFFFF),
       fontSize: getResponsiveFontSize(context, fontSize: 14),
+      fontFamily: 'Readex Pro',
+      fontWeight: FontWeight.w400,
+    );
+  }
+
+  static TextStyle styleRegular16(context) {
+    return TextStyle(
+      color: const Color(0xFFFFFFFF),
+      fontSize: getResponsiveFontSize(context, fontSize: 16),
       fontFamily: 'Readex Pro',
       fontWeight: FontWeight.w400,
     );
@@ -102,7 +120,7 @@ double getResponsiveFontSize(context, {required double fontSize}) {
   double scaleFactor = getScaleFactor(context);
   double responsiveFontSize = fontSize * scaleFactor;
 
-  double lowerLimit = fontSize * .7;
+  double lowerLimit = fontSize * .72;
   double upperLimit = fontSize * 1.1;
 
   return responsiveFontSize.clamp(lowerLimit, upperLimit);
