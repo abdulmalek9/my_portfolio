@@ -2,9 +2,12 @@ class ProjectModel {
   final String projectName;
   final String projectTitle;
   final String projectImage;
+  final String projectLink;
 
-  ProjectModel(
-      {required this.projectName,
-      required this.projectTitle,
-      required this.projectImage});
+  const ProjectModel({
+    required this.projectName,
+    required this.projectTitle,
+    required this.projectImage,
+    required this.projectLink,
+  });
 }

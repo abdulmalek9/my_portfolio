@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_portfolio/models/project_model.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectDetailes extends StatelessWidget {
   const ProjectDetailes({super.key, required this.projectModel});
@@ -23,7 +24,22 @@ class ProjectDetailes extends StatelessWidget {
             Text(
               projectModel.projectTitle,
               style: AppStyles.styleRegular22(context),
-            )
+            ),
+            const SizedBox(
+              height: 38,
+            ),
+            FittedBox(
+              fit: BoxFit.scaleDown,
+              child: TextButton(
+                child: Text(
+                  "Click to see source code",
+                  style: AppStyles.styleRegular22(context),
+                ),
+                onPressed: () {
+                  launchUrl(Uri.parse(projectModel.projectLink));
+                },
+              ),
+            ),
           ],
         ),
         const Expanded(

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_portfolio/models/project_model.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 import 'package:my_portfolio/utils/size_config.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 class ProjectDetailesTablet extends StatelessWidget {
   const ProjectDetailesTablet({super.key, required this.projectModel});
@@ -44,8 +45,25 @@ class ProjectDetailesTablet extends StatelessWidget {
                         ? AppStyles.styleRegular14(context)
                         : AppStyles.styleRegular22(context),
               ),
-            )
+            ),
+            const SizedBox(
+              height: 28,
+            ),
           ],
+        ),
+        FittedBox(
+          fit: BoxFit.scaleDown,
+          child: TextButton(
+            child: Text(
+              "Click to see source code",
+              style: MediaQuery.sizeOf(context).width >= SizeConfig.tabletPoint
+                  ? AppStyles.styleRegular14(context)
+                  : AppStyles.styleRegular22(context),
+            ),
+            onPressed: () {
+              launchUrl(Uri.parse(projectModel.projectLink));
+            },
+          ),
         ),
         const SizedBox(
           height: 80,

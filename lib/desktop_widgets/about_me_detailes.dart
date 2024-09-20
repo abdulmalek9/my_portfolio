@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/gradient_borders.dart';
+import 'package:my_portfolio/constant/constant.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
 class AboutMeDetailes extends StatelessWidget {
@@ -24,7 +25,7 @@ class AboutMeDetailes extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            """I'm a Fresh Graduate with Computer Science as Majors from Damascus University, Syria, I'm a skilled Flutter developer with a passion for creating innovative mobile apps over the past 1.5 years. My experience includes collaborating on diverse projects, where I've focused on creating responsive apps and integrating AI technologies. With a strong grasp of AI applications like Machine Learning, Deep Learning, and Large Language Models, I've successfully implemented these concepts in various projects. In addition I have some interests in Business.I’m a social person who likes to work with a team and be collaborative.\nI am passionate about my work and love creativity and constant learning.""",
+            aboutMe,
             style: AppStyles.styleRegular22(context)
                 .copyWith(height: 4, fontWeight: FontWeight.w300),
             textAlign: TextAlign.justify,

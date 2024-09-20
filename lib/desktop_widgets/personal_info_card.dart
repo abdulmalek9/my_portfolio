@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_portfolio/constant/constant.dart';
 import 'package:my_portfolio/contact_icon_builder.dart';
 import 'package:my_portfolio/utils/app_styles.dart';
 
@@ -17,7 +18,7 @@ class PersonalInfoCard extends StatelessWidget {
           child: Align(
             alignment: Alignment.topLeft,
             child: Text(
-              "Abdulmalek Al-khatib",
+              myDetails[0].myName,
               style: AppStyles.styleSemiBold47(context),
             ),
           ),
@@ -30,7 +31,7 @@ class PersonalInfoCard extends StatelessWidget {
           child: Align(
               alignment: Alignment.topLeft,
               child: Text(
-                "Software Developer",
+                myDetails[0].myPosition,
                 style: AppStyles.styleMedium14(context, 20)
                     .copyWith(color: const Color(0xFF56B8FF)),
               )),
@@ -39,7 +40,7 @@ class PersonalInfoCard extends StatelessWidget {
           height: 8,
         ),
         Text(
-          "A skilled flutter developer with 1.5 years of experience.\nyou can contact me at any time to start a work full\nof creativity and good performance",
+          myDetails[0].myDescripe,
           style: AppStyles.styleMedium14(context, 18),
           textAlign: TextAlign.justify,
         ),
