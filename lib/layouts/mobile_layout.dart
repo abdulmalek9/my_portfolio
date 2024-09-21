@@ -62,7 +62,7 @@ class MobileLayout extends StatelessWidget {
           ),
           const FittedBox(
             child: WhatCanIDoMobileSection(
-              edgeInsetsGeometry: EdgeInsets.symmetric(horizontal: 50),
+              edgeInsetsGeometry: EdgeInsets.symmetric(horizontal: 80),
             ),
           ),
           const SizedBox(
