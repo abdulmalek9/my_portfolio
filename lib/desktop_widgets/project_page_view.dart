@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constant/constant.dart';
-import 'package:my_portfolio/desktop_widgets/number_builder.dart';
-import 'package:my_portfolio/desktop_widgets/project_detailes.dart';
-import 'package:my_portfolio/provider/project_index_provider.dart';
+import 'package:abdulmalek_alkhatib/constant/constant.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/number_builder.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/project_detailes.dart';
+import 'package:abdulmalek_alkhatib/provider/project_index_provider.dart';
 import 'package:provider/provider.dart';
 
 class ProjectPageView extends StatelessWidget {

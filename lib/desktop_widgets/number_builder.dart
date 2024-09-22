@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/provider/project_index_provider.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/provider/project_index_provider.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 import 'package:provider/provider.dart';
 
 class NumberBuilder extends StatelessWidget {

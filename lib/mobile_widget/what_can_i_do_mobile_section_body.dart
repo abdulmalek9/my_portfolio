@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/glow_custom_container.dart';
-import 'package:my_portfolio/models/my_skill_card_model.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/glow_custom_container.dart';
+import 'package:abdulmalek_alkhatib/models/my_skill_card_model.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 
 class WhatCanIDoMobileSectionBody extends StatelessWidget {
   const WhatCanIDoMobileSectionBody({

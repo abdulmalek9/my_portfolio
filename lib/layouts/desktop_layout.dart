@@ -1,13 +1,12 @@
+import 'package:abdulmalek_alkhatib/contact_divider.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/about_me_detailes.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/about_me_row.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/card_desktop_builder.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/my_project_section.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/what_can_i_do_section.dart';
+import 'package:abdulmalek_alkhatib/get_in_touch.dart';
+import 'package:abdulmalek_alkhatib/provider/scroller_provider.dart';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/contact_divider.dart';
-import 'package:my_portfolio/desktop_widgets/about_me_detailes.dart';
-import 'package:my_portfolio/desktop_widgets/about_me_row.dart';
-import 'package:my_portfolio/desktop_widgets/card_desktop_builder.dart';
-import 'package:my_portfolio/desktop_widgets/desktop_header.dart';
-import 'package:my_portfolio/desktop_widgets/my_project_section.dart';
-import 'package:my_portfolio/desktop_widgets/what_can_i_do_section.dart';
-import 'package:my_portfolio/get_in_touch.dart';
-import 'package:my_portfolio/provider/scroller_provider.dart';
 import 'package:provider/provider.dart';
 
 class DesktopLayout extends StatelessWidget {
@@ -20,10 +19,10 @@ class DesktopLayout extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         // controller: context.read<ScrollerProvider>().scrollController,
         children: [
-          const Padding(
-            padding: EdgeInsets.symmetric(horizontal: 16.0),
-            child: DesktopHeader(),
-          ),
+          // const Padding(
+          //   padding: EdgeInsets.symmetric(horizontal: 16.0),
+          //   child: DesktopHeader(),
+          // ),
           const SizedBox(
             height: 40,
           ),

@@ -1,6 +1,6 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/home_page.dart';
+import 'package:abdulmalek_alkhatib/home_page.dart';
 
 void main() {
   runApp(

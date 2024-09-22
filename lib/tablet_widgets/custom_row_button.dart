@@ -8,6 +8,8 @@ class CustomRowButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
+      // width: 35,
+      // height: 35,
       decoration: const ShapeDecoration(
           shadows: [
             BoxShadow(
@@ -22,6 +24,7 @@ class CustomRowButton extends StatelessWidget {
             color: Color(0xff86CDFF),
           ))),
       child: IconButton(
+          iconSize: 35,
           onPressed: onPressed,
           icon: Icon(
             icon,

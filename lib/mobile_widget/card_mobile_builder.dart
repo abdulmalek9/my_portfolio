@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/custom_container.dart';
-import 'package:my_portfolio/mobile_widget/card_mobile_contain_builder.dart';
+import 'package:abdulmalek_alkhatib/custom_container.dart';
+import 'package:abdulmalek_alkhatib/mobile_widget/card_mobile_contain_builder.dart';
 
 class CardMobileBuilder extends StatelessWidget {
   const CardMobileBuilder({

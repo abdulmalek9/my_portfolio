@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/custom_container.dart';
-import 'package:my_portfolio/desktop_widgets/card_desktop_contain_builder.dart';
+import 'package:abdulmalek_alkhatib/custom_container.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/card_desktop_contain_builder.dart';
 
 class CartDesktopBuilder extends StatelessWidget {
   const CartDesktopBuilder({

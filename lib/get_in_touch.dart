@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 
 class GetInTouch extends StatelessWidget {
   const GetInTouch({super.key});
@@ -17,7 +17,7 @@ class GetInTouch extends StatelessWidget {
           ),
           FittedBox(
             child: Text(
-              "Get In Touch With Me:",
+              "Get In Touch:",
               style: AppStyles.styleMedium14(context, 18),
             ),
           ),

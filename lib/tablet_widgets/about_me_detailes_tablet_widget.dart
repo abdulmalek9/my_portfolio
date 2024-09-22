@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/gradient_borders.dart';
-import 'package:my_portfolio/constant/constant.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/constant/constant.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 
 class AboutMeDetailesTabletWidget extends StatelessWidget {
   const AboutMeDetailesTabletWidget({super.key, this.horizontalPadding});
@@ -63,7 +63,8 @@ class ToolsNameBuilder extends StatelessWidget {
         children: List.generate(
       tools.length,
       (index) => Padding(
-        padding: const EdgeInsets.only(right: 10.0, bottom: 10),
+        padding: EdgeInsets.only(
+            right: index == tools.length - 1 ? 0 : 10.0, bottom: 10),
         child: Container(
           width: 65,
           height: 28,

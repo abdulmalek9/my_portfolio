@@ -1,13 +1,12 @@
+import 'package:abdulmalek_alkhatib/contact_divider.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/about_me_row.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/what_can_i_do_section.dart';
+import 'package:abdulmalek_alkhatib/get_in_touch.dart';
+import 'package:abdulmalek_alkhatib/provider/scroller_provider.dart';
+import 'package:abdulmalek_alkhatib/tablet_widgets/about_me_detailes_tablet_widget.dart';
+import 'package:abdulmalek_alkhatib/tablet_widgets/card_tablet_builder.dart';
+import 'package:abdulmalek_alkhatib/tablet_widgets/my_projects_sectoin_tablet.dart';
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/contact_divider.dart';
-import 'package:my_portfolio/desktop_widgets/about_me_row.dart';
-import 'package:my_portfolio/desktop_widgets/what_can_i_do_section.dart';
-import 'package:my_portfolio/get_in_touch.dart';
-import 'package:my_portfolio/provider/scroller_provider.dart';
-import 'package:my_portfolio/tablet_widgets/about_me_detailes_tablet_widget.dart';
-import 'package:my_portfolio/tablet_widgets/card_tablet_builder.dart';
-import 'package:my_portfolio/tablet_widgets/header.dart';
-import 'package:my_portfolio/tablet_widgets/my_projects_sectoin_tablet.dart';
 import 'package:provider/provider.dart';
 
 class TabletLayout extends StatelessWidget {
@@ -19,7 +18,7 @@ class TabletLayout extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          const Header(),
+          // const Header(),
           const SizedBox(
             height: 25,
           ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constant/constant.dart';
-import 'package:my_portfolio/provider/project_index_provider.dart';
-import 'package:my_portfolio/tablet_widgets/custom_row_button.dart';
-import 'package:my_portfolio/tablet_widgets/project_detailes_tablet.dart';
+import 'package:abdulmalek_alkhatib/constant/constant.dart';
+import 'package:abdulmalek_alkhatib/provider/project_index_provider.dart';
+import 'package:abdulmalek_alkhatib/tablet_widgets/custom_row_button.dart';
+import 'package:abdulmalek_alkhatib/tablet_widgets/project_detailes_tablet.dart';
 import 'package:provider/provider.dart';
 
 class MyProjectsSectionTablet extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/custom_container.dart';
-import 'package:my_portfolio/tablet_widgets/card_tablet_contain_builder.dart';
+import 'package:abdulmalek_alkhatib/custom_container.dart';
+import 'package:abdulmalek_alkhatib/tablet_widgets/card_tablet_contain_builder.dart';
 
 class CardTabletBuilder extends StatelessWidget {
   const CardTabletBuilder({

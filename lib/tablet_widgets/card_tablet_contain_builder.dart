@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/contact_icon_builder.dart';
-import 'package:my_portfolio/tablet_widgets/personal_info_tablet_card.dart';
-import 'package:my_portfolio/utils/app_images.dart';
+import 'package:abdulmalek_alkhatib/contact_icon_builder.dart';
+import 'package:abdulmalek_alkhatib/tablet_widgets/personal_info_tablet_card.dart';
+import 'package:abdulmalek_alkhatib/utils/app_images.dart';
 
 class CardTabletContainBuilder extends StatelessWidget {
   const CardTabletContainBuilder({
@@ -42,7 +42,7 @@ class MyPictureWidget extends StatelessWidget {
             image: const DecorationImage(
               alignment: Alignment.topCenter,
               fit: BoxFit.cover,
-              image: AssetImage(Assets.imagesMyPic),
+              image: AssetImage(Assets.imagesMyPicture),
             ),
             shape: const OvalBorder()),
       ),

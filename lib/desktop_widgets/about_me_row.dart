@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/custom_devider.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/custom_devider.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 
 class DeviderRow extends StatelessWidget {
   const DeviderRow(

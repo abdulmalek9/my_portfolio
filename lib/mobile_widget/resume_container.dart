@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ResumeContainer extends StatelessWidget {

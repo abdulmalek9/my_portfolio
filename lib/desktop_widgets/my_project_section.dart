@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/project_page_view.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/project_page_view.dart';
 
 class MyProjectSection extends StatelessWidget {
   const MyProjectSection({super.key});

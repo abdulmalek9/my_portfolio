@@ -1,6 +1,6 @@
-import 'package:my_portfolio/constant/constant_classes.dart';
-import 'package:my_portfolio/models/project_model.dart';
-import 'package:my_portfolio/utils/app_images.dart';
+import 'package:abdulmalek_alkhatib/constant/constant_classes.dart';
+import 'package:abdulmalek_alkhatib/models/project_model.dart';
+import 'package:abdulmalek_alkhatib/utils/app_images.dart';
 
 const List<MyInfoDetails> myDetails = [
   MyInfoDetails(
@@ -10,9 +10,10 @@ const List<MyInfoDetails> myDetails = [
         "A skilled flutter developer with 1.5 years of experience.\nyou can contact me at any time to start a work full\nof creativity and good performance",
   ),
 ];
+// """A Fresh Graduate with a bachelor degree in Computer engineering from Damascus University, Syria, I'm a skilled Flutter developer with a passion for creating innovative mobile apps over the past 1.5 years. My experience includes collaborating on diverse projects, where I've focused on creating responsive apps and integrating AI technologies. With a strong grasp of AI applications like Machine Learning, Deep Learning, and Large Language Models, I've successfully implemented these concepts in various projects. In addition I have some interests in Business.I’m a social person who likes to work with a team and be collaborative.\nI am passionate about my work and love creativity and constant learning.""";
 
 const String aboutMe =
-    """I'm a Fresh Graduate with Computer Science as Majors from Damascus University, Syria, I'm a skilled Flutter developer with a passion for creating innovative mobile apps over the past 1.5 years. My experience includes collaborating on diverse projects, where I've focused on creating responsive apps and integrating AI technologies. With a strong grasp of AI applications like Machine Learning, Deep Learning, and Large Language Models, I've successfully implemented these concepts in various projects. In addition I have some interests in Business.I’m a social person who likes to work with a team and be collaborative.\nI am passionate about my work and love creativity and constant learning.""";
+    """A Fresh Graduate with a bachelor degree in Computer engineering from Damascus University, Syria, Specialized in Flutter with an experience building mobile apps for the past 1.5 years. My experience includes collaborating on diverse projects, where I've focused on creating responsive apps and integrating AI technologies. With a strong grasp of AI applications like Machine Learning, Deep Learning, and Large Language Models, I've successfully implemented these concepts in various projects. In addition I have some interests in Business. I’m a social person who likes to work with a team and be collaborative.\nI am passionate about my work and love creativity and constant learning.""";
 
 const List<String> skillProgramming = [
   "- Firebase Supabase Auth/Cloud",

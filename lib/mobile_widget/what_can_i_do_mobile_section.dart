@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/my_skill_detailes.dart';
-import 'package:my_portfolio/mobile_widget/skill_card_mobile_item.dart';
-import 'package:my_portfolio/models/my_skill_card_model.dart';
-import 'package:my_portfolio/utils/app_images.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/my_skill_detailes.dart';
+import 'package:abdulmalek_alkhatib/mobile_widget/skill_card_mobile_item.dart';
+import 'package:abdulmalek_alkhatib/models/my_skill_card_model.dart';
+import 'package:abdulmalek_alkhatib/utils/app_images.dart';
 
 class WhatCanIDoMobileSection extends StatefulWidget {
   const WhatCanIDoMobileSection({super.key, this.edgeInsetsGeometry});
@@ -17,7 +17,7 @@ class _WhatCanIDoSectionState extends State<WhatCanIDoMobileSection> {
     MySkillCardModel(
         skillImage: Assets.imagesProgramingScreen,
         skillName: "APP Development"),
-    MySkillCardModel(skillImage: Assets.imagesAi01, skillName: "Ai"),
+    MySkillCardModel(skillImage: Assets.imagesAiIcon02, skillName: "Ai"),
   ];
 
   bool isClicked = false;

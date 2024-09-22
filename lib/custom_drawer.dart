@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/provider/scroller_provider.dart';
-import 'package:my_portfolio/utils/app_images.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/provider/scroller_provider.dart';
+import 'package:abdulmalek_alkhatib/utils/app_images.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 import 'package:provider/provider.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -29,7 +29,7 @@ class CustomDrawer extends StatelessWidget {
                 height: 80,
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 16.0),
+                padding: const EdgeInsets.only(bottom: 30.0),
                 child: GestureDetector(
                   onTap: () {
                     // Provider.of<ScrollerProvider>(context).changePageIndex(
@@ -49,7 +49,7 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 16.0),
+                padding: const EdgeInsets.only(bottom: 30.0),
                 child: GestureDetector(
                   onTap: () {
                     context.read<ScrollerProvider>().changePageIndexDrawer(
@@ -63,7 +63,7 @@ class CustomDrawer extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(bottom: 16.0),
+                padding: const EdgeInsets.only(bottom: 30.0),
                 child: GestureDetector(
                   onTap: () {
                     // Provider.of<ScrollerProvider>(context)
@@ -111,7 +111,7 @@ class DrawerItem extends StatelessWidget {
 
       children: [
         Padding(
-          padding: const EdgeInsets.only(left: 80, right: 16.0),
+          padding: const EdgeInsets.only(left: 80, right: 20.0),
           child: Icon(
             iconData,
             color: Colors.white,

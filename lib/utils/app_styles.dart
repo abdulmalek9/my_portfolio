@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/utils/size_config.dart';
+import 'package:abdulmalek_alkhatib/utils/size_config.dart';
 
 // import 'package:responsive_dash_board/utils/size_config.dart';
 

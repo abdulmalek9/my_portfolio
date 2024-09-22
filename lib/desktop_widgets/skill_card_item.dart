@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_animate/flutter_animate.dart';
-import 'package:my_portfolio/desktop_widgets/what_can_i_do_section_body.dart';
-import 'package:my_portfolio/models/my_skill_card_model.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/what_can_i_do_section_body.dart';
+import 'package:abdulmalek_alkhatib/models/my_skill_card_model.dart';
 
 class SkillCardItem extends StatelessWidget {
   const SkillCardItem({

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/contact_icon_builder.dart';
-import 'package:my_portfolio/mobile_widget/mobile_personal_info_card.dart';
-import 'package:my_portfolio/utils/app_images.dart';
+import 'package:abdulmalek_alkhatib/contact_icon_builder.dart';
+import 'package:abdulmalek_alkhatib/mobile_widget/mobile_personal_info_card.dart';
+import 'package:abdulmalek_alkhatib/utils/app_images.dart';
 
 class CardMobileContainBuilder extends StatelessWidget {
   const CardMobileContainBuilder({super.key});
@@ -29,8 +29,8 @@ class MyPicMobileWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 18.0),
       child: Container(
-        width: 65 * 2,
-        height: 65 * 2,
+        width: 90 * 2,
+        height: 90 * 2,
         decoration: ShapeDecoration(
             gradient: LinearGradient(colors: [
               const Color(0xFFAB93D3).withOpacity(0.8),
@@ -39,7 +39,7 @@ class MyPicMobileWidget extends StatelessWidget {
             image: const DecorationImage(
               alignment: Alignment.topCenter,
               fit: BoxFit.cover,
-              image: AssetImage(Assets.imagesMyPic),
+              image: AssetImage(Assets.imagesMyPicture),
             ),
             shape: const OvalBorder()),
       ),

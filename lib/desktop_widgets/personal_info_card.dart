@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constant/constant.dart';
-import 'package:my_portfolio/contact_icon_builder.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/constant/constant.dart';
+import 'package:abdulmalek_alkhatib/contact_icon_builder.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 
 class PersonalInfoCard extends StatelessWidget {
   const PersonalInfoCard({

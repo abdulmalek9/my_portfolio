@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gradient_borders/gradient_borders.dart';
-import 'package:my_portfolio/constant/constant.dart';
-import 'package:my_portfolio/utils/app_styles.dart';
+import 'package:abdulmalek_alkhatib/constant/constant.dart';
+import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 
 class AboutMeDetailes extends StatelessWidget {
   const AboutMeDetailes({super.key});

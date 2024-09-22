@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/personal_info_card.dart';
-import 'package:my_portfolio/utils/app_images.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/personal_info_card.dart';
+import 'package:abdulmalek_alkhatib/utils/app_images.dart';
 
 class CardDesktopContainBuilder extends StatelessWidget {
   const CardDesktopContainBuilder({
@@ -29,7 +29,7 @@ class CardDesktopContainBuilder extends StatelessWidget {
                 image: const DecorationImage(
                   alignment: Alignment.topCenter,
                   fit: BoxFit.cover,
-                  image: AssetImage(Assets.imagesMyPic),
+                  image: AssetImage(Assets.imagesMyPicture),
                 ),
                 shape: const OvalBorder()),
           ),

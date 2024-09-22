@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/desktop_widgets/my_skill_detailes.dart';
-import 'package:my_portfolio/desktop_widgets/skill_card_item.dart';
-import 'package:my_portfolio/models/my_skill_card_model.dart';
-import 'package:my_portfolio/utils/app_images.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/my_skill_detailes.dart';
+import 'package:abdulmalek_alkhatib/desktop_widgets/skill_card_item.dart';
+import 'package:abdulmalek_alkhatib/models/my_skill_card_model.dart';
+import 'package:abdulmalek_alkhatib/utils/app_images.dart';
 
 class WhatCanIDoSection extends StatefulWidget {
   const WhatCanIDoSection({super.key, this.edgeInsetsGeometry});
