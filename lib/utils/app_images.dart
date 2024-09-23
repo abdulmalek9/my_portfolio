@@ -1,7 +1,7 @@
 // ignore_for_file: prefer_single_quotes
 class Assets {
   Assets._();
-  
+
   /// Assets for imagesAi
   /// assets/images/ai.png
   static const String imagesAi = "assets/images/ai.png";
@@ -36,7 +36,8 @@ class Assets {
 
   /// Assets for imagesInstagrameIcon
   /// assets/images/instagrame_icon.png
-  static const String imagesInstagrameIcon = "assets/images/instagrame_icon.png";
+  static const String imagesInstagrameIcon =
+      "assets/images/instagrame_icon.png";
 
   /// Assets for imagesLinkedinIcon
   /// assets/images/linkedin_icon.png
@@ -44,11 +45,12 @@ class Assets {
 
   /// Assets for imagesMyLogo04
   /// assets/images/my_logo-04.png
-  static const String imagesMyLogo04 = "assets/images/my_logo-04.png";
+  static const String imagesMyLogo04 = "assets/logos/logo-04.png";
 
   /// Assets for imagesMyLogo04White
   /// assets/images/my_logo-04-white.png
-  static const String imagesMyLogo04White = "assets/images/my_logo-04-white.png";
+  static const String imagesMyLogo04White =
+      "assets/images/my_logo-04-white.png";
 
   /// Assets for imagesMyPic
   /// assets/images/my_pic.png
@@ -68,7 +70,8 @@ class Assets {
 
   /// Assets for imagesProgramingScreen
   /// assets/images/programing_screen.png
-  static const String imagesProgramingScreen = "assets/images/programing_screen.png";
+  static const String imagesProgramingScreen =
+      "assets/images/programing_screen.png";
 
   /// Assets for imagesWaetherApp
   /// assets/images/waether_app.png
@@ -78,4 +81,3 @@ class Assets {
   /// assets/images/wanees_app.png
   static const String imagesWaneesApp = "assets/images/wanees_app.png";
 }
-

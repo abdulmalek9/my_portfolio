@@ -27,7 +27,7 @@ class AboutMeDetailes extends StatelessWidget {
           Text(
             aboutMe,
             style: AppStyles.styleRegular22(context)
-                .copyWith(height: 4, fontWeight: FontWeight.w300),
+                .copyWith(height: 2.8, fontWeight: FontWeight.w300),
             textAlign: TextAlign.justify,
           ),
           const SizedBox(

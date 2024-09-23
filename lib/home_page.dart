@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
             titleSpacing: 25,
             title: Padding(
               padding: const EdgeInsets.symmetric(vertical: 20.0),
-              child: Image.asset(width: 60, height: 60, Assets.imagesMyLogo04),
+              child: Image.asset(width: 40, height: 35, Assets.imagesMyLogo04),
             ),
             centerTitle: false,
             elevation: 0,
