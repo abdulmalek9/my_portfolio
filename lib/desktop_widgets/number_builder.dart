@@ -3,12 +3,12 @@ import 'package:abdulmalek_alkhatib/provider/project_index_provider.dart';
 import 'package:abdulmalek_alkhatib/utils/app_styles.dart';
 import 'package:provider/provider.dart';
 
+import '../constant/constant.dart';
+
 class NumberBuilder extends StatelessWidget {
   const NumberBuilder({
     super.key,
   });
-
-  static List<String> numbers = ["1", "2", "3", "4", "5", "6"];
 
   @override
   Widget build(BuildContext context) {
@@ -16,7 +16,7 @@ class NumberBuilder extends StatelessWidget {
       builder: (context, value, child) => Column(
         // mainAxisSize: MainAxisSize.min,
         children: List.generate(
-          NumberBuilder.numbers.length,
+          numbers.length,
           (index) => Padding(
             padding: const EdgeInsets.only(bottom: 40.0),
             child: InkWell(
@@ -50,7 +50,7 @@ class NumberBuilder extends StatelessWidget {
                   width: 40,
                   height: 40,
                   child: Text(
-                    NumberBuilder.numbers[index],
+                    numbers[index],
                     style: AppStyles.styleBold26(context).copyWith(
                       color: index ==
                               context.watch<ProjectIndexProvider>().pageindex

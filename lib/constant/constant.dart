@@ -42,6 +42,7 @@ const List<String> description = [
   // "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
   // "Its my end semester project. The whole design I developed here is an inspiration from my favortie Flutter Developer Marcin Szałek and his blog Fidev."
 ];
+const List<String> numbers = ["1", "2", "3", "4", "5", "6", "7"];
 
 const List<String> projectName = [
   "Dentasty",
