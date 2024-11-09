@@ -55,7 +55,7 @@ class ProjectDetailesTablet extends StatelessWidget {
           fit: BoxFit.scaleDown,
           child: TextButton(
             child: Text(
-              "Click to see source code",
+              projectModel.clickButtonName,
               style: MediaQuery.sizeOf(context).width >= SizeConfig.tabletPoint
                   ? AppStyles.styleRegular14(context)
                   : AppStyles.styleRegular22(context),

@@ -22,6 +22,10 @@ class Assets {
   /// assets/images/dashboard.png
   static const String imagesDashboard = "assets/images/dashboard.png";
 
+  /// Assets for imagesDentacity
+  /// assets/images/dentacity.png
+  static const String imagesDentacity = "assets/images/dentacity.png";
+
   /// Assets for imagesEmaleIcon
   /// assets/images/emale_icon.png
   static const String imagesEmaleIcon = "assets/images/emale_icon.png";

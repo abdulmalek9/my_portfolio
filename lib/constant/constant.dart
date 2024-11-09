@@ -30,12 +30,13 @@ const List<String> skillAi = [
 ];
 
 const List<String> description = [
+  "An e-learning platform offering exclusive video content,\n interactive learning, live teacher sessions, exams, and more",
   "A mobile AI assistant for the elderly.\nDetects emotions, facilitates communication, and provides reminders.",
-  "A comprehensive invoicing dashboard.\nFeatures expense tracking, income analysis, and transaction history,\nwith a clean and user-friendly interface.\n\nClick to see source code",
-  "A real-time chat app powered by Supabase.\nOffers secure authentication and scalable cloud storage\nfor seamless messaging experiences.\n\nClick to see source code",
-  "A news app. Fetches articles\nfrom various sources and displays them in a user-friendly format,\nwith in-app webview for detailed reading.\n\nClick to see source code",
-  "A note app with offline capabilities.\nStores notes locally using Hive database for easy access\nand editing without an internet connection,\nand some customizing for notes.\n\nClick to see source code",
-  "A weather forecasting app.\nProvides accurate weather information for any location,\nincluding current conditions, hourly forecasts, and a 3-day outlook.\n\nClick to see source code",
+  "A comprehensive invoicing dashboard.\nFeatures expense tracking, income analysis, and transaction history,\nwith a clean and user-friendly interface.",
+  "A real-time chat app powered by Supabase.\nOffers secure authentication and scalable cloud storage\nfor seamless messaging experiences.",
+  "A news app. Fetches articles\nfrom various sources and displays them in a user-friendly format,\nwith in-app webview for detailed reading.",
+  "A note app with offline capabilities.\nStores notes locally using Hive database for easy access\nand editing without an internet connection,\nand some customizing for notes.",
+  "A weather forecasting app.\nProvides accurate weather information for any location,\nincluding current conditions, hourly forecasts, and a 3-day outlook.",
   // "A concept of Music App developed using Flutter. Having functionality of playing Audio.",
   // "A simple GUI based Java application that sends file from Client to Server but not the other way around.",
   // "A concept app for self-services at various restaurants now a days. More like a Restaurant Ordering System.",
@@ -43,6 +44,7 @@ const List<String> description = [
 ];
 
 const List<String> projectName = [
+  "Dentasty",
   "Wanees",
   "Dashboard",
   "Sparke",
@@ -52,6 +54,7 @@ const List<String> projectName = [
 ];
 
 const List<String> projectLink = [
+  "https://drive.google.com/drive/u/2/folders/1Pm6EYH4L9loSn9LJEPKKt1mNq4Huz6qj",
   "https://github.com/abdulmalek9",
   "https://github.com/abdulmalek9/responsive_app",
   "https://github.com/abdulmalek9/chat_app",
@@ -64,31 +67,43 @@ List<ProjectModel> projectModel = [
   ProjectModel(
       projectName: projectName[0],
       projectTitle: description[0],
-      projectImage: Assets.imagesWaneesApp,
-      projectLink: projectLink[0]),
+      projectImage: Assets.imagesDentacity,
+      projectLink: projectLink[0],
+      clickButtonName: "Click To try App"),
   ProjectModel(
       projectName: projectName[1],
       projectTitle: description[1],
-      projectImage: Assets.imagesDashboard,
-      projectLink: projectLink[1]),
+      projectImage: Assets.imagesWaneesApp,
+      projectLink: projectLink[1],
+      clickButtonName: "Click to see source code"),
   ProjectModel(
       projectName: projectName[2],
       projectTitle: description[2],
-      projectImage: Assets.imagesChatApp,
-      projectLink: projectLink[2]),
+      projectImage: Assets.imagesDashboard,
+      projectLink: projectLink[2],
+      clickButtonName: "Click to see source code"),
   ProjectModel(
       projectName: projectName[3],
       projectTitle: description[3],
-      projectImage: Assets.imagesNewsApp,
-      projectLink: projectLink[3]),
+      projectImage: Assets.imagesChatApp,
+      projectLink: projectLink[3],
+      clickButtonName: "Click to see source code"),
   ProjectModel(
       projectName: projectName[4],
       projectTitle: description[4],
-      projectImage: Assets.imagesNotesApp,
-      projectLink: projectLink[4]),
+      projectImage: Assets.imagesNewsApp,
+      projectLink: projectLink[4],
+      clickButtonName: "Click to see source code"),
   ProjectModel(
       projectName: projectName[5],
       projectTitle: description[5],
+      projectImage: Assets.imagesNotesApp,
+      projectLink: projectLink[5],
+      clickButtonName: "Click to see source code"),
+  ProjectModel(
+      projectName: projectName[6],
+      projectTitle: description[6],
       projectImage: Assets.imagesWaetherApp,
-      projectLink: projectLink[5]),
+      projectLink: projectLink[6],
+      clickButtonName: "Click to see source code"),
 ];

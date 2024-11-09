@@ -32,7 +32,7 @@ class ProjectDetailes extends StatelessWidget {
               fit: BoxFit.scaleDown,
               child: TextButton(
                 child: Text(
-                  "Click to see source code",
+                  projectModel.clickButtonName,
                   style: AppStyles.styleRegular22(context),
                 ),
                 onPressed: () {
